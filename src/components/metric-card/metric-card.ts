@@ -6,9 +6,11 @@ export interface MetricCardProps {
   label: string;
   countTo?: number;
   accent?: "purple" | "green";
+  className?: string;
 }
 
 export function createMetricCard(props: MetricCardProps): HTMLDivElement {
+  const classes = props.className ? `metric-card ${props.className}` : "metric-card";
   const valueEl = el("span", {
     class: props.accent ? `metric-card__value metric-card__value--${props.accent}` : "metric-card__value",
     text: props.value,
@@ -16,7 +18,7 @@ export function createMetricCard(props: MetricCardProps): HTMLDivElement {
 
   const card = el(
     "div",
-    { class: "metric-card" },
+    { class: classes },
     valueEl,
     el("span", { class: "metric-card__label", text: props.label }),
   );

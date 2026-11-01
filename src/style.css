@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,63 +15,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  max-width: 1126px;
-  margin: 0 auto;
-}
-
-header nav {
+#app {
+  min-height: 100svh;
   display: flex;
-  gap: var(--gap-lg);
-}
-
-header nav a {
-  text-decoration: none;
-  color: var(--text-secondary);
-  transition: color 0.2s;
-}
-
-header nav a.active {
-  color: var(--accent-purple);
-}
-
-header nav a:hover {
-  color: var(--accent-purple);
-}
-
-.card-container {
-  animation: fadeIn 0.6s ease-out both;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-input, textarea {
-  background: var(--bg-card);
-  border: 1px solid transparent;
-  border-radius: var(--radius-button);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: 12px;
-  outline: none;
-}
-
-input:focus, textarea:focus {
-  border-color: var(--accent-purple);
-}
-
-section {
-  scroll-margin-top: 64px;
+  flex-direction: column;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 64px;
 }
