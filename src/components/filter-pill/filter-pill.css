@@ -2,8 +2,8 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
-  background: var(--bg-card);
+  padding: 8px 16px;
+  background: var(--bg-dark);
   color: var(--text-secondary);
   font-family: var(--font-body);
   font-size: 12px;
@@ -13,7 +13,7 @@
   cursor: pointer;
   transition:
     color 0.2s ease,
-    border-color 0.2s ease;
+    background-color 0.2s ease;
 }
 
 .filter-pill:hover {
@@ -21,8 +21,13 @@
 }
 
 .filter-pill--active {
-  color: var(--accent-purple);
-  border-color: var(--accent-purple);
+  background: var(--accent-purple);
+  color: var(--cta-bg);
+  font-weight: 500;
+}
+
+.filter-pill--active:hover {
+  color: var(--cta-bg);
 }
 
 .filter-pill:focus-visible {

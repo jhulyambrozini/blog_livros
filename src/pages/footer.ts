@@ -29,11 +29,11 @@ export function createFooter(): HTMLElement {
     createFooterColumn({
       title: "NAVEGAÇÃO",
       links: [
-        { label: "Home", href: "#home" },
-        { label: "Resenhas Literárias", href: "#resenhas" },
-        { label: "Listas & Recomendações", href: "#listas" },
-        { label: "Autores & Clássicos", href: "#autores" },
-        { label: "Clube do Livro", href: "#book-club" },
+        { label: "Home", href: "#/home" },
+        { label: "Resenhas Literárias", href: "#/resenhas" },
+        { label: "Listas & Recomendações", href: "#/listas" },
+        { label: "Autores & Clássicos", href: "#/autores" },
+        { label: "Clube do Livro", href: "#/home" },
       ],
     }),
   );

@@ -30,3 +30,8 @@
   border: 1px solid var(--accent-purple);
   color: var(--accent-purple);
 }
+
+.cta-button--accent {
+  background: var(--accent-purple);
+  color: var(--cta-bg);
+}
