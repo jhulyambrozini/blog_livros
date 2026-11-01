@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Livrário — Autores e Clássicos</title>
+		<link
+			rel="stylesheet"
+			href="/src/theme/tokens.css" />
+		<link
+			rel="stylesheet"
+			href="/src/theme/typography.css" />
+		<link
+			rel="stylesheet"
+			href="/src/theme/spacing.css" />
+		<link
+			rel="stylesheet"
+			href="/src/style.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/page.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/autores/autores.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/footer.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/header/header.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/brand-logo/brand-logo.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/nav-link/nav-link.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/cta-button/cta-button.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/footer-column/footer-column.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/footer-link/footer-link.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="brand-logo">
+				<span class="brand-logo__title">Livrário</span>
+				<span class="brand-logo__tagline">CURADORIA</span>
+			</div>
+			<nav class="header__nav">
+				<a
+					href="/index.html"
+					class="nav-link"
+					>Home</a
+				>
+				<a
+					href="/resenhas.html"
+					class="nav-link"
+					>Resenhas Literárias</a
+				>
+				<a
+					href="/listas.html"
+					class="nav-link"
+					>Listas &amp; Recomendações</a
+				>
+				<a
+					href="/autores.html"
+					class="nav-link nav-link--active"
+					aria-current="page"
+					>Autores &amp; Clássicos</a
+				>
+				<a
+					href="/contato.html"
+					class="nav-link"
+					>Contato</a
+				>
+			</nav>
+			<button
+				class="cta-button"
+				type="button">
+				Clube do Livro
+			</button>
+		</header>
+
+		<main class="page-wrapper">
+			<section class="autores-hero">
+				<div class="autores-hero__overline">
+					<span class="autores-hero__overline-dot"></span>
+					<span class="page-overline">ARQUIVO CRÍTICO PERMANENTE</span>
+				</div>
+				<h1 class="autores-hero__title">Autores &amp; Clássicos</h1>
+				<p class="autores-hero__subtitle">
+					Ensaios biográficos de fôlego, dissecações textuais e um mapa
+					reflexivo dos mestres que edificaram a literatura moderna. 5 dossiês +
+					painel canônico.
+				</p>
+				<div class="autores-hero__card">
+					<div class="autores-hero__stat">
+						<span class="autores-hero__stat-label">Período Compreendido</span>
+						<span class="autores-hero__stat-value">1780 — 1977</span>
+					</div>
+					<div class="autores-hero__stat">
+						<span class="autores-hero__stat-label">Matrizes Estilísticas</span>
+						<span
+							class="autores-hero__stat-value autores-hero__stat-value--green"
+							>Fluxo • Ironia • Existencial</span
+						>
+					</div>
+					<div class="autores-hero__stat">
+						<span class="autores-hero__stat-label">Revisão Crítica</span>
+						<span
+							class="autores-hero__stat-value autores-hero__stat-value--purple"
+							>Fevereiro 2025</span
+						>
+					</div>
+				</div>
+			</section>
+
+			<section class="autores-timeline">
+				<div class="autores-timeline__header">
+					<span
+						class="page-overline"
+						style="font-weight: 600; color: var(--accent-purple)"
+						>TOPOLOGIA HISTÓRICA</span
+					>
+					<h2 class="page-heading--medium">
+						Linha do Tempo dos<br />Movimentos
+					</h2>
+					<p class="page-desc--body">
+						Selecione uma era para inspecionar os impulsos estéticos
+						fundamentais que definiram cada período.
+					</p>
+				</div>
+				<div class="autores-timeline__eras">
+					<button
+						class="autores-era"
+						type="button">
+						<span class="autores-era__range">SÉC. XVIII</span>
+						<span class="autores-era__name">Iluminismo</span>
+						<span class="autores-era__subtitle">A Razão Triunfante</span>
+					</button>
+					<button
+						class="autores-era"
+						type="button">
+						<span class="autores-era__range">1790 — 1850</span>
+						<span class="autores-era__name">Romantismo</span>
+						<span class="autores-era__subtitle">O Sublime &amp; A Queda</span>
+					</button>
+					<button
+						class="autores-era autores-era--active"
+						type="button">
+						<span class="autores-era__range">1857 — 1900</span>
+						<span class="autores-era__name">Realismo &amp; Naturalismo</span>
+						<span class="autores-era__subtitle">A Dissecação Social</span>
+					</button>
+					<button
+						class="autores-era"
+						type="button">
+						<span class="autores-era__range">1910 — 1945</span>
+						<span class="autores-era__name">Modernismo (1922)</span>
+						<span class="autores-era__subtitle"
+							>Ruptura &amp; Antropofagia</span
+						>
+					</button>
+					<button
+						class="autores-era"
+						type="button">
+						<span class="autores-era__range">1945 — PRESENTE</span>
+						<span class="autores-era__name">Pós-Modernismo</span>
+						<span class="autores-era__subtitle"
+							>Fragmento &amp; Metanarrativa</span
+						>
+					</button>
+				</div>
+				<div class="autores-detail">
+					<div class="autores-detail__content">
+						<h3 class="autores-detail__title">
+							Realismo &amp; Naturalismo: O Fim das<br />Ilusões Românticas
+						</h3>
+						<p class="autores-detail__desc">
+							O romance se transforma em instrumento de autópsia moral. Em vez
+							da paixão idealizada dos românticos, os realistas voltam o olhar
+							clínico para a hipocrisia burguesa, a miserabilidade urbana e as
+							engrenagens invisíveis do poder.
+						</p>
+						<div class="autores-detail__chips">
+							<span class="autores-detail__chip">Narrador Confiável?</span>
+							<span class="autores-detail__chip">Corte Social</span>
+							<span class="autores-detail__chip">Observação Clínica</span>
+							<span class="autores-detail__chip">Descrição Estrutural</span>
+						</div>
+					</div>
+					<div class="autores-detail__aside">
+						<h4 class="autores-detail__aside-title">TENSÃO ESTRUTURAL</h4>
+						<p class="autores-detail__aside-quote">
+							"A terra lhe seja leve... mas a consciência, pesada." — O
+							despertar da crítica social através da forma romance.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="autores-gallery">
+				<div class="autores-gallery__header">
+					<span
+						class="page-overline"
+						style="font-weight: 600; color: var(--accent-purple)"
+						>GALERIA MONOGRÁFICA</span
+					>
+					<h2 class="page-heading--medium">Dossiês dos Mestres</h2>
+				</div>
+				<div class="autores-gallery__grid">
+					<article class="author-card">
+						<div class="author-card__image">
+							<span class="author-card__origin">BRASIL</span>
+							<span class="author-card__dates">1839 — 1908</span>
+						</div>
+						<div class="author-card__body">
+							<span class="author-card__subtitle">O Bruxo do Cosme Velho</span>
+							<h3 class="author-card__name">Machado de Assis</h3>
+							<span class="author-card__tese-label">TESE CRÍTICA</span>
+							<p class="author-card__desc">
+								Desmontou a hipocrisia das elites patriarcais com narradores não
+								confiáveis que expõem o abismo entre o discurso social e a
+								prática individual.
+							</p>
+						</div>
+					</article>
+					<article class="author-card">
+						<div class="author-card__image">
+							<span class="author-card__origin">INGLATERRA</span>
+							<span class="author-card__dates">1882 — 1941</span>
+						</div>
+						<div class="author-card__body">
+							<span class="author-card__subtitle">O Fluxo de Consciência</span>
+							<h3 class="author-card__name">Virginia Woolf</h3>
+							<span class="author-card__tese-label">TESE CRÍTICA</span>
+							<p class="author-card__desc">
+								Dissolveu o enredo linear tradicional em favor dos ritmos
+								elétricos da percepção subjetiva, onde o tempo interior dita a
+								arquitetura do romance.
+							</p>
+						</div>
+					</article>
+					<article class="author-card">
+						<div class="author-card__image">
+							<span class="author-card__origin">RÚSSIA</span>
+							<span class="author-card__dates">1821 — 1881</span>
+						</div>
+						<div class="author-card__body">
+							<span class="author-card__subtitle">A Sonda Psicológica</span>
+							<h3 class="author-card__name">Fiódor Dostoiévski</h3>
+							<span class="author-card__tese-label">TESE CRÍTICA</span>
+							<p class="author-card__desc">
+								Fundador do romance polifônico. Explora a culpa, o niilismo e a
+								redenção através de personagens que habitam o extremo moral como
+								quem respira.
+							</p>
+						</div>
+					</article>
+					<article class="author-card">
+						<div class="author-card__image">
+							<span class="author-card__origin">BRASIL</span>
+							<span class="author-card__dates">1920 — 1977</span>
+						</div>
+						<div class="author-card__body">
+							<span class="author-card__subtitle">A Epifania do Cotidiano</span>
+							<h3 class="author-card__name">Clarice Lispector</h3>
+							<span class="author-card__tese-label">TESE CRÍTICA</span>
+							<p class="author-card__desc">
+								Tensionou os limites da língua portuguesa até o inefável. Sua
+								prosa perfura o ordinário em busca do instante de revelação que
+								desorganiza a existência.
+							</p>
+						</div>
+					</article>
+					<article class="author-card">
+						<div class="author-card__image">
+							<span class="author-card__origin">PRAGA / BOÊMIA</span>
+							<span class="author-card__dates">1883 — 1924</span>
+						</div>
+						<div class="author-card__body">
+							<span class="author-card__subtitle">O Labirinto Burocrático</span>
+							<h3 class="author-card__name">Franz Kafka</h3>
+							<span class="author-card__tese-label">TESE CRÍTICA</span>
+							<p class="author-card__desc">
+								Construiu a alegoria definitiva da modernidade: o indivíduo
+								esmagado por sistemas que não compreende, onde a culpa é
+								anterior ao crime e o absurdo é a norma.
+							</p>
+						</div>
+					</article>
+					<article class="author-card">
+						<div class="author-card__placeholder">
+							<span class="author-card__placeholder-badge">EM PREPARAÇÃO</span>
+							<h3 class="author-card__placeholder-title">
+								Novas Monografias em Produção
+							</h3>
+							<p class="author-card__placeholder-desc">
+								O conselho editorial do Livrário está finalizando monografias
+								de:
+							</p>
+							<div class="author-card__placeholder-list">
+								<span>Proust — Em Processo</span>
+								<span>Joyce — Em Processo</span>
+								<span>Hilst — Em Processo</span>
+							</div>
+							<div style="padding-top: 8px">
+								<button
+									class="cta-button cta-button--accent"
+									type="button">
+									Sugerir Autor ao Conselho
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="autores-network">
+				<div class="autores-gallery__header">
+					<span
+						class="page-overline"
+						style="font-weight: 600; color: var(--accent-purple)"
+						>TOPOLOGIA DE AFINIDADES</span
+					>
+					<h2 class="page-heading--medium">
+						Diagrama de Correspondências<br />e Influências Mútuas
+					</h2>
+					<p class="autores-network__desc">
+						Nenhum mestre escreve em isolamento. Abaixo, as linhas de tensão
+						temática e formal que costuram a tradição literária moderna.
+					</p>
+				</div>
+				<div class="autores-network__container">
+					<div class="network-pair">
+						<div class="network-pair__nodes">
+							<div class="network-pair__node">
+								<div class="network-pair__node-icon">WOOL</div>
+								<span class="network-pair__node-name">Virginia Woolf</span>
+							</div>
+							<div class="network-pair__connector">
+								<div class="network-pair__connector-line"></div>
+								<span class="network-pair__connector-tag"
+									>Fluxo &amp; Epifania</span
+								>
+								<div class="network-pair__connector-line"></div>
+							</div>
+							<div class="network-pair__node">
+								<div class="network-pair__node-icon">CLAR</div>
+								<span class="network-pair__node-name">Clarice Lispector</span>
+							</div>
+						</div>
+						<div class="network-pair__explanation">
+							<span class="network-pair__exp-label">Woolf ⟷ Clarice</span>
+							<span class="network-pair__exp-tag">Fluxo &amp; Epifania</span>
+							<p class="network-pair__exp-desc">
+								A substituição do acontecimento factual pela intensidade da
+								experiência íntima. Ambas dissolvem a trama externa em favor da
+								geografia movediça da consciência.
+							</p>
+						</div>
+					</div>
+					<div class="network-pair">
+						<div class="network-pair__nodes">
+							<div class="network-pair__node">
+								<div class="network-pair__node-icon">DOST</div>
+								<span class="network-pair__node-name">Fiódor Dostoiévski</span>
+							</div>
+							<div class="network-pair__connector">
+								<div class="network-pair__connector-line"></div>
+								<span class="network-pair__connector-tag"
+									>Culpa &amp; Punição</span
+								>
+								<div class="network-pair__connector-line"></div>
+							</div>
+							<div class="network-pair__node">
+								<div class="network-pair__node-icon">KAFK</div>
+								<span class="network-pair__node-name">Franz Kafka</span>
+							</div>
+						</div>
+						<div class="network-pair__explanation">
+							<span class="network-pair__exp-label">Dostoiévski ⟷ Kafka</span>
+							<span class="network-pair__exp-tag">Culpa &amp; Punição</span>
+							<p class="network-pair__exp-desc">
+								Raskólnikov antecipa Josef K.: a culpa que precede o julgamento.
+								Enquanto Dostoiévski busca redenção, Kafka constata a condenação
+								perpétua.
+							</p>
+						</div>
+					</div>
+					<div class="network-pair">
+						<div class="network-pair__nodes">
+							<div class="network-pair__node">
+								<div class="network-pair__node-icon">MACH</div>
+								<span class="network-pair__node-name">Machado de Assis</span>
+							</div>
+							<div class="network-pair__connector">
+								<div class="network-pair__connector-line"></div>
+								<span class="network-pair__connector-tag"
+									>Ceticismo Radical</span
+								>
+								<div class="network-pair__connector-line"></div>
+							</div>
+							<div class="network-pair__node">
+								<div class="network-pair__node-icon">MOD.</div>
+								<span class="network-pair__node-name">Toda a Modernidade</span>
+							</div>
+						</div>
+						<div class="network-pair__explanation">
+							<span class="network-pair__exp-label"
+								>Machado ⟷ Toda a Modernidade</span
+							>
+							<span class="network-pair__exp-tag">Ceticismo Radical</span>
+							<p class="network-pair__exp-desc">
+								Machado desconfiou das grandes narrativas do progresso décadas
+								antes da crise europeia. Seu ceticismo lúcido ecoa em Borges,
+								Saramago e na metaficção.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="autores-guide">
+				<div class="autores-gallery__header">
+					<span
+						class="page-overline"
+						style="font-weight: 600; color: var(--accent-purple)"
+						>GUIA METODOLÓGICO</span
+					>
+					<h2 class="page-heading--medium">
+						Por Onde Começar os<br />Clássicos
+					</h2>
+				</div>
+				<div class="autores-guide__methods">
+					<div class="method-card">
+						<span class="method-card__number">01</span>
+						<span class="method-card__subtitle">PORTA DE ENTRADA</span>
+						<h3 class="method-card__author">Machado de Assis</h3>
+						<span class="method-card__work"
+							>Memórias Póstumas de Brás Cubas</span
+						>
+						<p class="method-card__desc">
+							Evite começar pelos contos esparsos caso deseje capturar a
+							amplitude do romance brasileiro. Memórias Póstumas é a chave de
+							todo o edifício machadiano.
+						</p>
+						<span class="method-card__edition-label">Edição de Referência</span>
+						<span class="method-card__edition"
+							>Edição Crítica da Ateliê Editorial / Todavia</span
+						>
+						<span class="method-card__edition-note"
+							>Notas minuciosas de Hélio de Seixas Guimarães.</span
+						>
+						<div class="method-card__meta">
+							<span class="method-card__difficulty">Dificuldade: Média</span>
+							<span class="method-card__stat">160 Capítulos</span>
+						</div>
+					</div>
+					<div class="method-card">
+						<span class="method-card__number">02</span>
+						<span class="method-card__subtitle">PORTA DE ENTRADA</span>
+						<h3 class="method-card__author">Fiódor Dostoiévski</h3>
+						<span class="method-card__work">Crime e Castigo (1866)</span>
+						<p class="method-card__desc">
+							O ritmo febril da perseguição psicológica entre Raskólnikov e o
+							juiz Porfiri Petrovitch é a porta de entrada ideal para o universo
+							dostoievskiano.
+						</p>
+						<span class="method-card__edition-label">Tradução Obrigatória</span>
+						<span class="method-card__edition"
+							>Tradução direta do russo por Rubens Figueiredo ou Paulo
+							Bezerra</span
+						>
+						<span class="method-card__edition-note"
+							>Editora 34 — preserva a polifonia crua dos diálogos.</span
+						>
+						<div class="method-card__meta">
+							<span class="method-card__difficulty">Dificuldade: Alta</span>
+							<span class="method-card__stat">592 Páginas</span>
+						</div>
+					</div>
+					<div class="method-card">
+						<span class="method-card__number">03</span>
+						<span class="method-card__subtitle">PORTA DE ENTRADA</span>
+						<h3 class="method-card__author">Virginia Woolf</h3>
+						<span class="method-card__work">Mrs. Dalloway (1925)</span>
+						<p class="method-card__desc">
+							A narrativa de um único dia de junho em Londres entrelaça Clarissa
+							Dalloway e o veterano Septimus Warren Smith num fluxo de
+							consciência inaugural.
+						</p>
+						<span class="method-card__edition-label">Tradução Recomendada</span>
+						<span class="method-card__edition"
+							>Tomaz Tadeu (Autêntica) ou Mário Quintana (Globo)</span
+						>
+						<span class="method-card__edition-note"
+							>A edição da Autêntica inclui ensaios complementares.</span
+						>
+						<div class="method-card__meta">
+							<span class="method-card__difficulty">Dificuldade: Moderada</span>
+							<span class="method-card__stat">1 Dia</span>
+						</div>
+					</div>
+				</div>
+				<div class="autores-tips">
+					<div class="tip-card">
+						<span class="tip-card__number">01 / RITMO DE LEITURA</span>
+						<h4 class="tip-card__title">Desacelere a Marcha</h4>
+						<p class="tip-card__desc">
+							O clássico não foi escrito para consumo veloz de timeline. Aceite
+							páginas que exigem releitura e parágrafos que pedem pausa.
+						</p>
+					</div>
+					<div class="tip-card">
+						<span class="tip-card__number">02 / SEM PREFACIOMANIA</span>
+						<h4 class="tip-card__title">Prefácio no Final</h4>
+						<p class="tip-card__desc">
+							Estudos introdutórios costumam entregar revelações cruciais. Leia
+							o original primeiro; o prefácio acadêmico depois.
+						</p>
+					</div>
+					<div class="tip-card">
+						<span class="tip-card__number">03 / TRADUÇÃO IMPORTA</span>
+						<h4 class="tip-card__title">Fuja das Traduções Indiretas</h4>
+						<p class="tip-card__desc">
+							Edições vertidas do francês ou inglês intermediário perdem
+							texturas vitais. Priorize traduções diretas do idioma original.
+						</p>
+					</div>
+					<div class="tip-card">
+						<span class="tip-card__number">04 / ANOTAÇÕES MARGINAIS</span>
+						<h4 class="tip-card__title">Dialogar no Papel</h4>
+						<p class="tip-card__desc">
+							Mantenha um caderno ou anote nas margens. O clássico só ganha vida
+							através do diálogo ativo entre leitor e texto.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="site-footer__main">
+				<div class="site-footer__brand-column">
+					<div class="site-footer__brand-name">Livrário</div>
+					<div class="site-footer__brand-tagline">CURADORIA</div>
+					<p class="site-footer__brand-desc">
+						Um refúgio para quem busca profundidade literária, resenhas
+						estruturais e curadoria independente.
+					</p>
+					<div class="page-overline">MANIFESTO EDITORIAL</div>
+					<p class="site-footer__brand-desc">
+						Independência na crítica, fascínio pelo clássico e reverência pela
+						palavra precisa.
+					</p>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-column__title">NAVEGAÇÃO</h4>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Home</a
+					>
+					<a
+						class="footer-link"
+						href="/resenhas.html"
+						>Resenhas Literárias</a
+					>
+					<a
+						class="footer-link"
+						href="/listas.html"
+						>Listas &amp; Recomendações</a
+					>
+					<a
+						class="footer-link"
+						href="/autores.html"
+						>Autores &amp; Clássicos</a
+					>
+					<a
+						class="footer-link"
+						href="/contato.html"
+						>Contato</a
+					>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-column__title">INSTITUCIONAL</h4>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Sobre o Livrário</a
+					>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Política Editorial</a
+					>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Privacidade &amp; Termos</a
+					>
+					<a
+						class="footer-link"
+						href="/contato.html"
+						>Fale Conosco</a
+					>
+				</div>
+				<div class="site-footer__newsletter-wrap">
+					<span
+						class="page-overline"
+						style="font-weight: 600"
+						>A CARTA QUINZENAL</span
+					>
+					<p class="page-desc--body">
+						Ensaios inéditos, lançamentos comentados e garimpos raros direto na
+						sua caixa de entrada.
+					</p>
+					<form
+						class="newsletter-form"
+						onsubmit="return false;">
+						<input
+							class="newsletter-form__input"
+							type="email"
+							name="email"
+							placeholder="Seu e-mail literário"
+							required />
+						<button
+							class="cta-button"
+							type="submit">
+							Inscrever-se
+						</button>
+					</form>
+				</div>
+			</div>
+			<hr class="site-footer__divider" />
+			<div class="site-footer__bottom">
+				<span class="site-footer__copyright"
+					>© 2025 Livrário. Todos os direitos reservados. Feito com rigor
+					intelectual.</span
+				>
+				<div class="site-footer__edition">
+					<span class="site-footer__edition-dot"></span>
+					<span class="site-footer__edition-text">Edição Semanal Ativa</span>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			type="module"
+			src="/src/pages/interactive.ts"></script>
+	</body>
+</html>

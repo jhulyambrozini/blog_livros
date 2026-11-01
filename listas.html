@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livrário — Listas e Recomendações</title>
+    <link rel="stylesheet" href="/src/theme/tokens.css" />
+    <link rel="stylesheet" href="/src/theme/typography.css" />
+    <link rel="stylesheet" href="/src/theme/spacing.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/pages/page.css" />
+    <link rel="stylesheet" href="/src/pages/listas/listas.css" />
+    <link rel="stylesheet" href="/src/pages/footer.css" />
+    <link rel="stylesheet" href="/src/components/header/header.css" />
+    <link rel="stylesheet" href="/src/components/brand-logo/brand-logo.css" />
+    <link rel="stylesheet" href="/src/components/nav-link/nav-link.css" />
+    <link rel="stylesheet" href="/src/components/cta-button/cta-button.css" />
+    <link rel="stylesheet" href="/src/components/filter-pill/filter-pill.css" />
+    <link rel="stylesheet" href="/src/components/footer-column/footer-column.css" />
+    <link rel="stylesheet" href="/src/components/footer-link/footer-link.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand-logo">
+        <span class="brand-logo__title">Livrário</span>
+        <span class="brand-logo__tagline">CURADORIA</span>
+      </div>
+      <nav class="header__nav">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/resenhas.html" class="nav-link">Resenhas Literárias</a>
+        <a href="/listas.html" class="nav-link nav-link--active" aria-current="page">Listas &amp; Recomendações</a>
+        <a href="/autores.html" class="nav-link">Autores &amp; Clássicos</a>
+        <a href="/contato.html" class="nav-link">Contato</a>
+      </nav>
+      <button class="cta-button" type="button">Clube do Livro</button>
+    </header>
+
+    <main class="page-wrapper">
+      <section class="listas-hero">
+        <div class="listas-hero__badge">
+          <span class="listas-hero__badge-dot"></span>
+          <span class="listas-hero__badge-text">MANIFESTO EDITORIAL · CURADORIA 100% HUMANA</span>
+        </div>
+        <h1 class="listas-hero__title">Roteiros de Leitura,<br/>Sem Algoritmos.</h1>
+        <p class="listas-hero__desc">Rejeitamos recomendações compradas por editoras e métricas artificiais de engajamento. Cada curadoria nasce da leitura real, da comparação estrutural e do entusiasmo genuíno.</p>
+        <div class="listas-hero__tags">
+          <span class="listas-hero__tag">Livre de patrocínios ocultos</span>
+          <span class="listas-hero__tag">Ritmo de absorção real</span>
+          <span class="listas-hero__tag">Contexto histórico detalhado</span>
+        </div>
+        <div class="listas-hero__preview">
+          <div class="listas-hero__preview-image"></div>
+          <div class="listas-hero__preview-body">
+            <span class="page-overline" style="font-weight:600;color:var(--accent-purple)">SELEÇÃO DA SEMANA</span>
+            <h2 style="font-family:var(--font-body);font-size:14px;font-weight:700;color:var(--text-primary);margin:0">Páginas de Fôlego: O Cânone Redescoberto</h2>
+            <span class="listas-form__overline" style="color:var(--accent-green)">7 Obras Chave</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="listas-filter">
+        <div class="listas-filter__label">
+          <span class="listas-filter__icon">◈</span>
+          <span class="listas-filter__text">FILTRAR ATMOSFERA:</span>
+        </div>
+        <div class="listas-filter__pills">
+          <button class="filter-pill filter-pill--active" type="button"><span>Todas</span></button>
+          <button class="filter-pill" type="button"><span>Melancólico</span></button>
+          <button class="filter-pill" type="button"><span>Eletrizante</span></button>
+          <button class="filter-pill" type="button"><span>Poético</span></button>
+          <button class="filter-pill" type="button"><span>Reflexivo</span></button>
+          <button class="filter-pill" type="button"><span>Desafiador</span></button>
+        </div>
+      </div>
+
+      <section class="listas-cards">
+        <article class="lista-card">
+          <div class="lista-card__content">
+            <span class="lista-card__feature">LEITURA IMEDIATA</span>
+            <h3 class="lista-card__title">10 Romances Curtos para Devorar<br/>em um Fim de Semana</h3>
+            <div class="lista-card__meta-tags">
+              <span class="lista-card__meta-tag">Fim de Semana</span>
+              <span class="lista-card__meta-tag">Novelas &amp; Brevidades</span>
+            </div>
+            <div class="lista-card__mood-line"><span class="lista-card__mood-label">Absorção rápida e densa</span></div>
+            <p class="lista-card__desc">Nem toda grande obra exige meses de dedicação. Selecionamos ficções condensadas onde cada parágrafo pesa ouro — narrativas que cabem num fim de semana mas ressoam por décadas.</p>
+            <div class="lista-card__books">
+              <div class="lista-card__book">
+                <div class="lista-card__book-meta">
+                  <span class="lista-card__book-author">Franz Kafka</span>
+                  <span class="lista-card__book-title">A Metamorfose</span>
+                  <span class="lista-card__book-details">72 páginas · 1915</span>
+                </div>
+                <span class="lista-card__book-mood">Alienante</span>
+              </div>
+              <div class="lista-card__book">
+                <div class="lista-card__book-meta">
+                  <span class="lista-card__book-author">Albert Camus</span>
+                  <span class="lista-card__book-title">O Estrangeiro</span>
+                  <span class="lista-card__book-details">128 páginas · 1942</span>
+                </div>
+                <span class="lista-card__book-mood">Absurdo</span>
+              </div>
+              <div class="lista-card__book">
+                <div class="lista-card__book-meta">
+                  <span class="lista-card__book-author">Fiódor Dostoiévski</span>
+                  <span class="lista-card__book-title">Noites Brancas</span>
+                  <span class="lista-card__book-details">96 páginas · 1848</span>
+                </div>
+                <span class="lista-card__book-mood">Lírico</span>
+              </div>
+            </div>
+            <div class="lista-card__footer">
+              <div class="lista-card__footer-left"><span class="lista-card__time-info">Tempo estimado: 48h totais</span></div>
+              <div class="lista-card__footer-left"><span class="lista-card__time-badge">Tempo: 2 Dias</span></div>
+            </div>
+          </div>
+          <div class="lista-card__image"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <div class="site-footer__brand-column">
+          <div class="site-footer__brand-name">Livrário</div>
+          <div class="site-footer__brand-tagline">CURADORIA</div>
+          <p class="site-footer__brand-desc">Um refúgio para quem busca profundidade literária, resenhas estruturais e curadoria independente.</p>
+          <div class="page-overline">MANIFESTO EDITORIAL</div>
+          <p class="site-footer__brand-desc">Independência na crítica, fascínio pelo clássico e reverência pela palavra precisa.</p>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-column__title">NAVEGAÇÃO</h4>
+          <a class="footer-link" href="/index.html">Home</a>
+          <a class="footer-link" href="/resenhas.html">Resenhas Literárias</a>
+          <a class="footer-link" href="/listas.html">Listas &amp; Recomendações</a>
+          <a class="footer-link" href="/autores.html">Autores &amp; Clássicos</a>
+          <a class="footer-link" href="/contato.html">Contato</a>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-column__title">INSTITUCIONAL</h4>
+          <a class="footer-link" href="/index.html">Sobre o Livrário</a>
+          <a class="footer-link" href="/index.html">Política Editorial</a>
+          <a class="footer-link" href="/index.html">Privacidade &amp; Termos</a>
+          <a class="footer-link" href="/contato.html">Fale Conosco</a>
+        </div>
+        <div class="site-footer__newsletter-wrap">
+          <span class="page-overline" style="font-weight:600">A CARTA QUINZENAL</span>
+          <p class="page-desc--body">Ensaios inéditos, lançamentos comentados e garimpos raros direto na sua caixa de entrada.</p>
+          <form class="newsletter-form" onsubmit="return false">
+            <input class="newsletter-form__input" type="email" name="email" placeholder="Seu e-mail literário" required />
+            <button class="cta-button" type="submit">Inscrever-se</button>
+          </form>
+        </div>
+      </div>
+      <hr class="site-footer__divider" />
+      <div class="site-footer__bottom">
+        <span class="site-footer__copyright">© 2025 Livrário. Todos os direitos reservados. Feito com rigor intelectual.</span>
+        <div class="site-footer__edition">
+          <span class="site-footer__edition-dot"></span>
+          <span class="site-footer__edition-text">Edição Semanal Ativa</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/pages/interactive.ts"></script>
+  </body>
+</html>

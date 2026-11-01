@@ -2,7 +2,7 @@
 document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href')
-    if (!href || href === '#' || href.startsWith('#')) return
+    if (!href || href === '#') return
     e.preventDefault()
     const target = document.querySelector(href)
     if (target) target.scrollIntoView({ behavior: 'smooth' })
@@ -85,7 +85,7 @@ document.querySelectorAll<HTMLFormElement>('.contact-form').forEach(form => {
       return
     }
     alert('Mensagem enviada com sucesso. Responderemos em breve.')
-    inputs.forEach(el => { el.value = ''; (el as HTMLInputElement).checked = false })
+    inputs.forEach(el => { el.value = ''; if (el.type === 'checkbox') (el as HTMLInputElement).checked = false })
   })
 })
 
