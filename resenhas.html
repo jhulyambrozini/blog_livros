@@ -1,426 +1,833 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Livrário — Resenhas Literárias</title>
-    <link rel="stylesheet" href="/src/theme/tokens.css" />
-    <link rel="stylesheet" href="/src/theme/typography.css" />
-    <link rel="stylesheet" href="/src/theme/spacing.css" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/pages/page.css" />
-    <link rel="stylesheet" href="/src/pages/resenhas/resenhas.css" />
-    <link rel="stylesheet" href="/src/pages/footer.css" />
-    <link rel="stylesheet" href="/src/components/header/header.css" />
-    <link rel="stylesheet" href="/src/components/brand-logo/brand-logo.css" />
-    <link rel="stylesheet" href="/src/components/nav-link/nav-link.css" />
-    <link rel="stylesheet" href="/src/components/cta-button/cta-button.css" />
-    <link rel="stylesheet" href="/src/components/filter-pill/filter-pill.css" />
-    <link rel="stylesheet" href="/src/components/inline-link/inline-link.css" />
-    <link rel="stylesheet" href="/src/components/footer-column/footer-column.css" />
-    <link rel="stylesheet" href="/src/components/footer-link/footer-link.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="brand-logo">
-        <span class="brand-logo__title">Livrário</span>
-        <span class="brand-logo__tagline">CURADORIA</span>
-      </div>
-      <nav class="header__nav">
-        <a href="/index.html" class="nav-link">Home</a>
-        <a href="/resenhas.html" class="nav-link nav-link--active" aria-current="page">Resenhas Literárias</a>
-        <a href="/listas.html" class="nav-link">Listas &amp; Recomendações</a>
-        <a href="/autores.html" class="nav-link">Autores &amp; Clássicos</a>
-        <a href="/contato.html" class="nav-link">Contato</a>
-      </nav>
-      <button class="cta-button" type="button">Clube do Livro</button>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Livrário — Resenhas Literárias</title>
+		<link
+			rel="stylesheet"
+			href="/src/theme/tokens.css" />
+		<link
+			rel="stylesheet"
+			href="/src/theme/typography.css" />
+		<link
+			rel="stylesheet"
+			href="/src/theme/spacing.css" />
+		<link
+			rel="stylesheet"
+			href="/src/style.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/page.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/resenhas/resenhas.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/footer.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/header/header.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/brand-logo/brand-logo.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/nav-link/nav-link.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/cta-button/cta-button.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/filter-pill/filter-pill.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/inline-link/inline-link.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/footer-column/footer-column.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/footer-link/footer-link.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/newsletter-form/newsletter-form.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="brand-logo">
+				<span class="brand-logo__title">Livrário</span>
+				<span class="brand-logo__tagline">CURADORIA</span>
+			</div>
+			<nav class="header__nav">
+				<a
+					href="/index.html"
+					class="nav-link"
+					>Home</a
+				>
+				<a
+					href="/resenhas.html"
+					class="nav-link nav-link--active"
+					aria-current="page"
+					>Resenhas Literárias</a
+				>
+				<a
+					href="/listas.html"
+					class="nav-link"
+					>Listas &amp; Recomendações</a
+				>
+				<a
+					href="/autores.html"
+					class="nav-link"
+					>Autores &amp; Clássicos</a
+				>
+				<a
+					href="/contato.html"
+					class="nav-link"
+					>Contato</a
+				>
+			</nav>
+			<button
+				class="cta-button"
+				type="button">
+				Clube do Livro
+			</button>
+		</header>
 
-    <main class="page-wrapper">
-      <section class="resenhas-hero">
-        <div class="resenhas-hero__header">
-          <div class="resenhas-hero__title-wrap">
-            <div class="resenhas-hero__badge">
-              <span class="resenhas-hero__badge-dot"></span>
-              <span class="page-overline">ARQUIVO CRÍTICO PERMANENTE</span>
-            </div>
-            <h1 class="resenhas-hero__title">Resenhas Literárias</h1>
-            <p class="resenhas-hero__subtitle">Análises textuais verticalizadas, dissecação de estruturas narrativas e escrutínio de traduções.</p>
-          </div>
-          <div class="resenhas-metrics">
-            <div class="resenhas-metrics__block">
-              <span class="resenhas-metrics__label">ARQUIVO ABERTO</span>
-              <div class="resenhas-metrics__value-row">
-                <span class="resenhas-metrics__value">342</span>
-                <span class="resenhas-metrics__suffix">obras</span>
-              </div>
-            </div>
-            <div class="resenhas-metrics__divider"></div>
-            <div class="resenhas-metrics__block">
-              <span class="resenhas-metrics__label">MÉDIA CRÍTICA</span>
-              <div class="resenhas-metrics__value-row">
-                <span class="resenhas-metrics__value resenhas-metrics__value--green">9.2</span>
-                <span class="resenhas-metrics__suffix resenhas-metrics__suffix--muted">/10</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+		<main class="page-wrapper">
+			<section class="resenhas-hero">
+				<div class="resenhas-hero__header">
+					<div class="resenhas-hero__title-wrap">
+						<div class="resenhas-hero__badge">
+							<span class="resenhas-hero__badge-dot"></span>
+							<span class="page-overline">ARQUIVO CRÍTICO PERMANENTE</span>
+						</div>
+						<h1 class="resenhas-hero__title">Resenhas Literárias</h1>
+						<p class="resenhas-hero__subtitle">
+							Análises textuais verticalizadas, dissecação de estruturas
+							narrativas e escrutínio de traduções.
+						</p>
+					</div>
+					<div class="resenhas-metrics">
+						<div class="resenhas-metrics__block">
+							<span class="resenhas-metrics__label">ARQUIVO ABERTO</span>
+							<div class="resenhas-metrics__value-row">
+								<span class="resenhas-metrics__value">342</span>
+								<span class="resenhas-metrics__suffix">obras</span>
+							</div>
+						</div>
+						<div class="resenhas-metrics__divider"></div>
+						<div class="resenhas-metrics__block">
+							<span class="resenhas-metrics__label">MÉDIA CRÍTICA</span>
+							<div class="resenhas-metrics__value-row">
+								<span
+									class="resenhas-metrics__value resenhas-metrics__value--green"
+									>9.2</span
+								>
+								<span
+									class="resenhas-metrics__suffix resenhas-metrics__suffix--muted"
+									>/10</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <div class="resenhas-filters">
-        <button class="filter-pill filter-pill--active" type="button"><span>Todos os Gêneros (342)</span></button>
-        <button class="filter-pill" type="button"><span>Ficção Contemporânea (118)</span></button>
-        <button class="filter-pill" type="button"><span>Não-Ficção &amp; Ensaio (74)</span></button>
-        <button class="filter-pill" type="button"><span>Sci-Fi &amp; Filosofia (52)</span></button>
-        <button class="filter-pill" type="button"><span>Poesia (41)</span></button>
-        <button class="filter-pill" type="button"><span>Clássicos Universais (57)</span></button>
-      </div>
+			<div class="resenhas-filters">
+				<button
+					class="filter-pill filter-pill--active"
+					type="button">
+					<span>Todos os Gêneros (342)</span>
+				</button>
+				<button
+					class="filter-pill"
+					type="button">
+					<span>Ficção Contemporânea (118)</span>
+				</button>
+				<button
+					class="filter-pill"
+					type="button">
+					<span>Não-Ficção &amp; Ensaio (74)</span>
+				</button>
+				<button
+					class="filter-pill"
+					type="button">
+					<span>Sci-Fi &amp; Filosofia (52)</span>
+				</button>
+				<button
+					class="filter-pill"
+					type="button">
+					<span>Poesia (41)</span>
+				</button>
+				<button
+					class="filter-pill"
+					type="button">
+					<span>Clássicos Universais (57)</span>
+				</button>
+			</div>
 
-      <section class="resenhas-featured">
-        <div class="resenhas-featured__inner">
-          <div class="resenhas-featured__content">
-            <div class="resenhas-featured__meta">
-              <span class="resenhas-featured__byline">Por Rodrigo Albuquerque</span>
-              <span class="resenhas-featured__dot">•</span>
-              <span class="resenhas-featured__time">14 min de leitura aprofundada</span>
-              <span class="resenhas-featured__score">
-                <span class="resenhas-featured__score-icon">✓</span>
-                <span class="resenhas-featured__score-text">9.8 / 10</span>
-              </span>
-            </div>
-            <span class="resenhas-featured__origin">HAN KANG • CORÉIA DO SUL</span>
-            <h2 class="resenhas-featured__title">A Vegetariana: O Corpo como Última<br/>Fronteira de Insurreição</h2>
-            <blockquote class="resenhas-featured__blockquote">
-              <p class="resenhas-featured__quote">“A recusa da carne não é dieta nem asceticismo pietista; é a declaração radical de quem prefere transmutar-se em planta a continuar cúmplice da violência que sustenta o pacto social doméstico.”</p>
-              <span class="resenhas-featured__quote-src">— ENSAIO CENTRAL, CADERNO LIVRÁRIO</span>
-            </blockquote>
-            <p class="resenhas-featured__body">Estruturado em três movimentos polifônicos, onde a protagonista Yeong-hye nunca ganha voz direta mas é retratada através das lentes de três homens obcecados por sua submissão, a obra de Han Kang desconstrói o pacto da domesticidade asiática e reescreve a recusa como ato político.</p>
-            <div class="resenhas-featured__chips">
-              <span class="resenhas-featured__chips-label">Núcleos conceituais:</span>
-              <div class="resenhas-featured__chips-row">
-                <span class="resenhas-featured__chip">Metamorfose</span>
-                <span class="resenhas-featured__chip">Patriarcado Asiático</span>
-                <span class="resenhas-featured__chip">Violência Epistêmica</span>
-              </div>
-            </div>
-            <div class="resenhas-featured__actions">
-              <button class="cta-button cta-button--accent" type="button">Ler Ensaio Crítico Completo</button>
-              <div class="resenhas-featured__quiet-actions">
-                <span class="resenhas-featured__quiet-action"><span class="resenhas-featured__quiet-text">Salvar</span></span>
-                <span class="resenhas-featured__quiet-action"><span class="resenhas-featured__quiet-text">Compartilhar</span></span>
-              </div>
-            </div>
-          </div>
-          <div class="resenhas-featured__image">
-            <span class="resenhas-featured__image-badge">RESENHA EM DESTAQUE</span>
-            <span class="resenhas-featured__image-tag">Prêmio Nobel 2024</span>
-          </div>
-        </div>
-      </section>
+			<section class="resenhas-featured">
+				<div class="resenhas-featured__inner">
+					<div class="resenhas-featured__content">
+						<div class="resenhas-featured__meta">
+							<span class="resenhas-featured__byline"
+								>Por Rodrigo Albuquerque</span
+							>
+							<span class="resenhas-featured__dot">•</span>
+							<span class="resenhas-featured__time"
+								>14 min de leitura aprofundada</span
+							>
+							<span class="resenhas-featured__score">
+								<span class="resenhas-featured__score-icon">✓</span>
+								<span class="resenhas-featured__score-text">9.8 / 10</span>
+							</span>
+						</div>
+						<span class="resenhas-featured__origin"
+							>HAN KANG • CORÉIA DO SUL</span
+						>
+						<h2 class="resenhas-featured__title">
+							A Vegetariana: O Corpo como Última<br />Fronteira de Insurreição
+						</h2>
+						<blockquote class="resenhas-featured__blockquote">
+							<p class="resenhas-featured__quote">
+								“A recusa da carne não é dieta nem asceticismo pietista; é a
+								declaração radical de quem prefere transmutar-se em planta a
+								continuar cúmplice da violência que sustenta o pacto social
+								doméstico.”
+							</p>
+							<span class="resenhas-featured__quote-src"
+								>— ENSAIO CENTRAL, CADERNO LIVRÁRIO</span
+							>
+						</blockquote>
+						<p class="resenhas-featured__body">
+							Estruturado em três movimentos polifônicos, onde a protagonista
+							Yeong-hye nunca ganha voz direta mas é retratada através das
+							lentes de três homens obcecados por sua submissão, a obra de Han
+							Kang desconstrói o pacto da domesticidade asiática e reescreve a
+							recusa como ato político.
+						</p>
+						<div class="resenhas-featured__chips">
+							<span class="resenhas-featured__chips-label"
+								>Núcleos conceituais:</span
+							>
+							<div class="resenhas-featured__chips-row">
+								<span class="resenhas-featured__chip">Metamorfose</span>
+								<span class="resenhas-featured__chip"
+									>Patriarcado Asiático</span
+								>
+								<span class="resenhas-featured__chip"
+									>Violência Epistêmica</span
+								>
+							</div>
+						</div>
+						<div class="resenhas-featured__actions">
+							<button
+								class="cta-button cta-button--accent"
+								type="button">
+								Ler Ensaio Crítico Completo
+							</button>
+							<div class="resenhas-featured__quiet-actions">
+								<span class="resenhas-featured__quiet-action"
+									><span class="resenhas-featured__quiet-text"
+										>Salvar</span
+									></span
+								>
+								<span class="resenhas-featured__quiet-action"
+									><span class="resenhas-featured__quiet-text"
+										>Compartilhar</span
+									></span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="resenhas-featured__image">
+						<span class="resenhas-featured__image-badge"
+							>RESENHA EM DESTAQUE</span
+						>
+						<span class="resenhas-featured__image-tag">Prêmio Nobel 2024</span>
+					</div>
+				</div>
+			</section>
 
-      <div class="resenhas-layout">
-        <div class="resenhas-cards">
-          <div class="resenhas-cards__header">
-            <div class="resenhas-cards__title-row">
-              <h3 class="resenhas-cards__title">Ensaios Recentes</h3>
-              <span class="resenhas-cards__count">(4 de 342)</span>
-            </div>
-            <div class="resenhas-cards__sort-row">
-              <span class="resenhas-cards__sort-label">Ordenar por:</span>
-              <select class="resenhas-cards__sort-select">
-                <option>Mais recentes</option>
-                <option>Melhor nota</option>
-                <option>Mais comentadas</option>
-              </select>
-            </div>
-          </div>
+			<div class="resenhas-layout">
+				<div class="resenhas-cards">
+					<div class="resenhas-cards__header">
+						<div class="resenhas-cards__title-row">
+							<h3 class="resenhas-cards__title">Ensaios Recentes</h3>
+							<span class="resenhas-cards__count">(4 de 342)</span>
+						</div>
+						<div class="resenhas-cards__sort-row">
+							<span class="resenhas-cards__sort-label">Ordenar por:</span>
+							<select class="resenhas-cards__sort-select">
+								<option>Mais recentes</option>
+								<option>Melhor nota</option>
+								<option>Mais comentadas</option>
+							</select>
+						</div>
+					</div>
 
-          <div class="resenhas-grid">
-            <article class="review-card">
-              <div class="review-card__image">
-                <div class="review-card__image-top">
-                  <span class="review-card__category">FICÇÃO BRASILEIRA</span>
-                  <div class="review-card__score">
-                    <span class="review-card__score-value">9.5</span>
-                    <span class="review-card__score-total">/ 10</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-card__body">
-                <div class="review-card__meta">
-                  <span class="review-card__meta-text">Itamar Vieira Junior</span>
-                  <span class="review-card__meta-text">•</span>
-                  <span class="review-card__meta-text">11 min</span>
-                </div>
-                <h4 class="review-card__title">Torto Arado: A Terra, a Faca Silenciosa<br/>e a Memória Ancestral</h4>
-                <p class="review-card__excerpt">Bibiana e Belonísia não são apenas irmãs unidas pela tragédia da lâmina; são vetores de uma memória ancestral que sangra na terra do sertão baiano.</p>
-              </div>
-              <div class="review-card__footer">
-                <div class="review-card__impact">
-                  <svg class="review-card__impact-sparkline" viewBox="0 0 64 20" aria-hidden="true"><path d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7" fill="none" stroke="var(--accent-purple)" stroke-width="1.5"/></svg>
-                  <span class="review-card__impact-label">Impacto Crítico</span>
-                </div>
-                <div class="review-card__link-row">
-                  <a class="inline-link" href="#"><span class="inline-link__label">Ler Crítica</span><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                </div>
-              </div>
-            </article>
-            <article class="review-card">
-              <div class="review-card__image">
-                <div class="review-card__image-top">
-                  <span class="review-card__category">SCI-FI &amp; ÉTICA</span>
-                  <div class="review-card__score">
-                    <span class="review-card__score-value">9.0</span>
-                    <span class="review-card__score-total">/ 10</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-card__body">
-                <div class="review-card__meta">
-                  <span class="review-card__meta-text">Kazuo Ishiguro</span>
-                  <span class="review-card__meta-text">•</span>
-                  <span class="review-card__meta-text">9 min</span>
-                </div>
-                <h4 class="review-card__title">Klara e o Sol: A Fé Solar de uma<br/>Máquina Observadora</h4>
-                <p class="review-card__excerpt">Ao eleger uma Amiga Artificial ingênua como narradora, Ishiguro constrói um experimento de fé, solidão e o preço de se amar o que é programado.</p>
-              </div>
-              <div class="review-card__footer">
-                <div class="review-card__impact">
-                  <svg class="review-card__impact-sparkline" viewBox="0 0 64 20" aria-hidden="true"><path d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7" fill="none" stroke="var(--accent-purple)" stroke-width="1.5"/></svg>
-                  <span class="review-card__impact-label">Impacto Crítico</span>
-                </div>
-                <div class="review-card__link-row">
-                  <a class="inline-link" href="#"><span class="inline-link__label">Ler Crítica</span><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                </div>
-              </div>
-            </article>
-            <article class="review-card">
-              <div class="review-card__image">
-                <div class="review-card__image-top">
-                  <span class="review-card__category">ROMANCE CONTEMPORÂNEO</span>
-                  <div class="review-card__score">
-                    <span class="review-card__score-value">9.7</span>
-                    <span class="review-card__score-total">/ 10</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-card__body">
-                <div class="review-card__meta">
-                  <span class="review-card__meta-text">Jeferson Tenório</span>
-                  <span class="review-card__meta-text">•</span>
-                  <span class="review-card__meta-text">13 min</span>
-                </div>
-                <h4 class="review-card__title">O Avesso da Pele: O Luto Filial e a<br/>Rede do Silêncio</h4>
-                <p class="review-card__excerpt">Pedro reconstrói os passos do pai Henrique em Porto Alegre através de um arquivo afetivo feito de ausências, silêncios e a violência estrutural do racismo.</p>
-              </div>
-              <div class="review-card__footer">
-                <div class="review-card__impact">
-                  <svg class="review-card__impact-sparkline" viewBox="0 0 64 20" aria-hidden="true"><path d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7" fill="none" stroke="var(--accent-purple)" stroke-width="1.5"/></svg>
-                  <span class="review-card__impact-label">Impacto Crítico</span>
-                </div>
-                <div class="review-card__link-row">
-                  <a class="inline-link" href="#"><span class="inline-link__label">Ler Crítica</span><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                </div>
-              </div>
-            </article>
-            <article class="review-card">
-              <div class="review-card__image">
-                <div class="review-card__image-top">
-                  <span class="review-card__category">CLÁSSICO MODERNO</span>
-                  <div class="review-card__score">
-                    <span class="review-card__score-value">9.9</span>
-                    <span class="review-card__score-total">/ 10</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-card__body">
-                <div class="review-card__meta">
-                  <span class="review-card__meta-text">Sylvia Plath</span>
-                  <span class="review-card__meta-text">•</span>
-                  <span class="review-card__meta-text">16 min</span>
-                </div>
-                <h4 class="review-card__title">A Redoma de Vidro: O Asfixiante<br/>Interior da Perfeição</h4>
-                <p class="review-card__excerpt">Revisitar Esther Greenwood longe do viés reducionista da biografia revela um romance-lâmina sobre o feminino, a saúde mental e o espetáculo da normalidade.</p>
-              </div>
-              <div class="review-card__footer">
-                <div class="review-card__impact">
-                  <svg class="review-card__impact-sparkline" viewBox="0 0 64 20" aria-hidden="true"><path d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7" fill="none" stroke="var(--accent-purple)" stroke-width="1.5"/></svg>
-                  <span class="review-card__impact-label">Impacto Crítico</span>
-                </div>
-                <div class="review-card__link-row">
-                  <a class="inline-link" href="#"><span class="inline-link__label">Ler Crítica</span><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                </div>
-              </div>
-            </article>
-          </div>
+					<div class="resenhas-grid">
+						<article class="review-card">
+							<div class="review-card__image">
+								<div class="review-card__image-top">
+									<span class="review-card__category">FICÇÃO BRASILEIRA</span>
+									<div class="review-card__score">
+										<span class="review-card__score-value">9.5</span>
+										<span class="review-card__score-total">/ 10</span>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__body">
+								<div class="review-card__meta">
+									<span class="review-card__meta-text"
+										>Itamar Vieira Junior</span
+									>
+									<span class="review-card__meta-text">•</span>
+									<span class="review-card__meta-text">11 min</span>
+								</div>
+								<h4 class="review-card__title">
+									Torto Arado: A Terra, a Faca Silenciosa<br />e a Memória
+									Ancestral
+								</h4>
+								<p class="review-card__excerpt">
+									Bibiana e Belonísia não são apenas irmãs unidas pela tragédia
+									da lâmina; são vetores de uma memória ancestral que sangra na
+									terra do sertão baiano.
+								</p>
+							</div>
+							<div class="review-card__footer">
+								<div class="review-card__impact">
+									<svg
+										class="review-card__impact-sparkline"
+										viewBox="0 0 64 20"
+										aria-hidden="true">
+										<path
+											d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7"
+											fill="none"
+											stroke="var(--accent-purple)"
+											stroke-width="1.5" />
+									</svg>
+									<span class="review-card__impact-label">Impacto Crítico</span>
+								</div>
+								<div class="review-card__link-row">
+									<a
+										class="inline-link"
+										href="#"
+										><span class="inline-link__label">Ler Crítica</span
+										><svg
+											class="svg-icon"
+											viewBox="0 0 24 24"
+											width="16"
+											height="16"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											aria-hidden="true">
+											<path d="M5 12h14M13 6l6 6-6 6" /></svg
+									></a>
+								</div>
+							</div>
+						</article>
+						<article class="review-card">
+							<div class="review-card__image">
+								<div class="review-card__image-top">
+									<span class="review-card__category">SCI-FI &amp; ÉTICA</span>
+									<div class="review-card__score">
+										<span class="review-card__score-value">9.0</span>
+										<span class="review-card__score-total">/ 10</span>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__body">
+								<div class="review-card__meta">
+									<span class="review-card__meta-text">Kazuo Ishiguro</span>
+									<span class="review-card__meta-text">•</span>
+									<span class="review-card__meta-text">9 min</span>
+								</div>
+								<h4 class="review-card__title">
+									Klara e o Sol: A Fé Solar de uma<br />Máquina Observadora
+								</h4>
+								<p class="review-card__excerpt">
+									Ao eleger uma Amiga Artificial ingênua como narradora,
+									Ishiguro constrói um experimento de fé, solidão e o preço de
+									se amar o que é programado.
+								</p>
+							</div>
+							<div class="review-card__footer">
+								<div class="review-card__impact">
+									<svg
+										class="review-card__impact-sparkline"
+										viewBox="0 0 64 20"
+										aria-hidden="true">
+										<path
+											d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7"
+											fill="none"
+											stroke="var(--accent-purple)"
+											stroke-width="1.5" />
+									</svg>
+									<span class="review-card__impact-label">Impacto Crítico</span>
+								</div>
+								<div class="review-card__link-row">
+									<a
+										class="inline-link"
+										href="#"
+										><span class="inline-link__label">Ler Crítica</span
+										><svg
+											class="svg-icon"
+											viewBox="0 0 24 24"
+											width="16"
+											height="16"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											aria-hidden="true">
+											<path d="M5 12h14M13 6l6 6-6 6" /></svg
+									></a>
+								</div>
+							</div>
+						</article>
+						<article class="review-card">
+							<div class="review-card__image">
+								<div class="review-card__image-top">
+									<span class="review-card__category"
+										>ROMANCE CONTEMPORÂNEO</span
+									>
+									<div class="review-card__score">
+										<span class="review-card__score-value">9.7</span>
+										<span class="review-card__score-total">/ 10</span>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__body">
+								<div class="review-card__meta">
+									<span class="review-card__meta-text">Jeferson Tenório</span>
+									<span class="review-card__meta-text">•</span>
+									<span class="review-card__meta-text">13 min</span>
+								</div>
+								<h4 class="review-card__title">
+									O Avesso da Pele: O Luto Filial e a<br />Rede do Silêncio
+								</h4>
+								<p class="review-card__excerpt">
+									Pedro reconstrói os passos do pai Henrique em Porto Alegre
+									através de um arquivo afetivo feito de ausências, silêncios e
+									a violência estrutural do racismo.
+								</p>
+							</div>
+							<div class="review-card__footer">
+								<div class="review-card__impact">
+									<svg
+										class="review-card__impact-sparkline"
+										viewBox="0 0 64 20"
+										aria-hidden="true">
+										<path
+											d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7"
+											fill="none"
+											stroke="var(--accent-purple)"
+											stroke-width="1.5" />
+									</svg>
+									<span class="review-card__impact-label">Impacto Crítico</span>
+								</div>
+								<div class="review-card__link-row">
+									<a
+										class="inline-link"
+										href="#"
+										><span class="inline-link__label">Ler Crítica</span
+										><svg
+											class="svg-icon"
+											viewBox="0 0 24 24"
+											width="16"
+											height="16"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											aria-hidden="true">
+											<path d="M5 12h14M13 6l6 6-6 6" /></svg
+									></a>
+								</div>
+							</div>
+						</article>
+						<article class="review-card">
+							<div class="review-card__image">
+								<div class="review-card__image-top">
+									<span class="review-card__category">CLÁSSICO MODERNO</span>
+									<div class="review-card__score">
+										<span class="review-card__score-value">9.9</span>
+										<span class="review-card__score-total">/ 10</span>
+									</div>
+								</div>
+							</div>
+							<div class="review-card__body">
+								<div class="review-card__meta">
+									<span class="review-card__meta-text">Sylvia Plath</span>
+									<span class="review-card__meta-text">•</span>
+									<span class="review-card__meta-text">16 min</span>
+								</div>
+								<h4 class="review-card__title">
+									A Redoma de Vidro: O Asfixiante<br />Interior da Perfeição
+								</h4>
+								<p class="review-card__excerpt">
+									Revisitar Esther Greenwood longe do viés reducionista da
+									biografia revela um romance-lâmina sobre o feminino, a saúde
+									mental e o espetáculo da normalidade.
+								</p>
+							</div>
+							<div class="review-card__footer">
+								<div class="review-card__impact">
+									<svg
+										class="review-card__impact-sparkline"
+										viewBox="0 0 64 20"
+										aria-hidden="true">
+										<path
+											d="M0 16 L10 12 L20 14 L30 6 L40 10 L50 4 L64 7"
+											fill="none"
+											stroke="var(--accent-purple)"
+											stroke-width="1.5" />
+									</svg>
+									<span class="review-card__impact-label">Impacto Crítico</span>
+								</div>
+								<div class="review-card__link-row">
+									<a
+										class="inline-link"
+										href="#"
+										><span class="inline-link__label">Ler Crítica</span
+										><svg
+											class="svg-icon"
+											viewBox="0 0 24 24"
+											width="16"
+											height="16"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											aria-hidden="true">
+											<path d="M5 12h14M13 6l6 6-6 6" /></svg
+									></a>
+								</div>
+							</div>
+						</article>
+					</div>
 
-          <div class="resenhas-pagination">
-            <span class="resenhas-pagination__info">Exibindo 1–4 de 342 resenhas</span>
-            <div class="resenhas-pagination__buttons">
-              <button class="resenhas-pagination__page resenhas-pagination__page--active" type="button">1</button>
-              <button class="resenhas-pagination__page" type="button">2</button>
-              <button class="resenhas-pagination__page" type="button">3</button>
-              <span class="resenhas-pagination__ellipsis">...</span>
-              <button class="resenhas-pagination__page" type="button">86</button>
-            </div>
-          </div>
-        </div>
+					<div class="resenhas-pagination">
+						<span class="resenhas-pagination__info"
+							>Exibindo 1–4 de 342 resenhas</span
+						>
+						<div class="resenhas-pagination__buttons">
+							<button
+								class="resenhas-pagination__page resenhas-pagination__page--active"
+								type="button">
+								1
+							</button>
+							<button
+								class="resenhas-pagination__page"
+								type="button">
+								2
+							</button>
+							<button
+								class="resenhas-pagination__page"
+								type="button">
+								3
+							</button>
+							<span class="resenhas-pagination__ellipsis">...</span>
+							<button
+								class="resenhas-pagination__page"
+								type="button">
+								86
+							</button>
+						</div>
+					</div>
+				</div>
 
-        <aside class="resenhas-sidebar">
-          <div class="sidebar-card">
-            <div class="sidebar-card__header">
-              <h4 class="sidebar-card__title">CRITÉRIOS CRÍTICOS</h4>
-              <span class="sidebar-card__subtitle">Padrão Livrário</span>
-              <p class="sidebar-card__desc">Nossas notas não medem apelo comercial ou facilidade de leitura. Cada eixo pondera um aspecto estrutural da obra.</p>
-            </div>
-            <div class="criteria-list">
-              <div class="criteria-row">
-                <div class="criteria-row__top">
-                  <span class="criteria-row__label">Arquitetura da Linguagem</span>
-                  <span class="criteria-row__value criteria-row__value--purple">35%</span>
-                </div>
-                <div class="criteria-row__bar"><div class="criteria-row__fill" style="width:35%;background:var(--accent-purple)"></div></div>
-              </div>
-              <div class="criteria-row">
-                <div class="criteria-row__top">
-                  <span class="criteria-row__label">Originalidade Conceitual</span>
-                  <span class="criteria-row__value criteria-row__value--green">25%</span>
-                </div>
-                <div class="criteria-row__bar"><div class="criteria-row__fill" style="width:25%;background:var(--accent-green)"></div></div>
-              </div>
-              <div class="criteria-row">
-                <div class="criteria-row__top">
-                  <span class="criteria-row__label">Densidade Temática &amp; Épica</span>
-                  <span class="criteria-row__value criteria-row__value--purple">25%</span>
-                </div>
-                <div class="criteria-row__bar"><div class="criteria-row__fill" style="width:25%;background:var(--accent-purple)"></div></div>
-              </div>
-              <div class="criteria-row">
-                <div class="criteria-row__top">
-                  <span class="criteria-row__label">Ressonância Histórica</span>
-                  <span class="criteria-row__value criteria-row__value--muted">15%</span>
-                </div>
-                <div class="criteria-row__bar"><div class="criteria-row__fill" style="width:15%;background:var(--text-muted)"></div></div>
-              </div>
-            </div>
-            <div class="sidebar-card__footer">
-              <span class="sidebar-card__footer-text">Auditoria editorial bimestral</span>
-              <a class="inline-link" href="#"><span class="inline-link__label">Ler manual</span><svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </div>
-          </div>
+				<aside class="resenhas-sidebar">
+					<div class="sidebar-card">
+						<div class="sidebar-card__header">
+							<h4 class="sidebar-card__title">CRITÉRIOS CRÍTICOS</h4>
+							<span class="sidebar-card__subtitle">Padrão Livrário</span>
+							<p class="sidebar-card__desc">
+								Nossas notas não medem apelo comercial ou facilidade de leitura.
+								Cada eixo pondera um aspecto estrutural da obra.
+							</p>
+						</div>
+						<div class="criteria-list">
+							<div class="criteria-row">
+								<div class="criteria-row__top">
+									<span class="criteria-row__label"
+										>Arquitetura da Linguagem</span
+									>
+									<span class="criteria-row__value criteria-row__value--purple"
+										>35%</span
+									>
+								</div>
+								<div class="criteria-row__bar">
+									<div
+										class="criteria-row__fill"
+										style="width: 35%; background: var(--accent-purple)"></div>
+								</div>
+							</div>
+							<div class="criteria-row">
+								<div class="criteria-row__top">
+									<span class="criteria-row__label"
+										>Originalidade Conceitual</span
+									>
+									<span class="criteria-row__value criteria-row__value--green"
+										>25%</span
+									>
+								</div>
+								<div class="criteria-row__bar">
+									<div
+										class="criteria-row__fill"
+										style="width: 25%; background: var(--accent-green)"></div>
+								</div>
+							</div>
+							<div class="criteria-row">
+								<div class="criteria-row__top">
+									<span class="criteria-row__label"
+										>Densidade Temática &amp; Épica</span
+									>
+									<span class="criteria-row__value criteria-row__value--purple"
+										>25%</span
+									>
+								</div>
+								<div class="criteria-row__bar">
+									<div
+										class="criteria-row__fill"
+										style="width: 25%; background: var(--accent-purple)"></div>
+								</div>
+							</div>
+							<div class="criteria-row">
+								<div class="criteria-row__top">
+									<span class="criteria-row__label">Ressonância Histórica</span>
+									<span class="criteria-row__value criteria-row__value--muted"
+										>15%</span
+									>
+								</div>
+								<div class="criteria-row__bar">
+									<div
+										class="criteria-row__fill"
+										style="width: 15%; background: var(--text-muted)"></div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-card__footer">
+							<span class="sidebar-card__footer-text"
+								>Auditoria editorial bimestral</span
+							>
+							<a
+								class="inline-link"
+								href="#"
+								><span class="inline-link__label">Ler manual</span
+								><svg
+									class="svg-icon"
+									viewBox="0 0 24 24"
+									width="16"
+									height="16"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									aria-hidden="true">
+									<path d="M5 12h14M13 6l6 6-6 6" /></svg
+							></a>
+						</div>
+					</div>
 
-          <div class="sidebar-card">
-            <div class="sidebar-card__header">
-              <h4 class="sidebar-card__title">MAIS COMENTADAS</h4>
-              <span class="sidebar-card__subtitle">Últimos 7 dias</span>
-            </div>
-            <div class="ranking-list">
-              <div class="ranking-item">
-                <span class="ranking-item__rank ranking-item__rank--top">01</span>
-                <div class="ranking-item__content">
-                  <span class="ranking-item__title">A Redoma de Vidro: Sylvia Plath</span>
-                  <div class="ranking-item__meta">
-                    <span class="ranking-item__score">9.9</span>
-                    <span class="ranking-item__dot">•</span>
-                    <span class="ranking-item__comments">148 comentários</span>
-                  </div>
-                </div>
-              </div>
-              <div class="ranking-item">
-                <span class="ranking-item__rank">02</span>
-                <div class="ranking-item__content">
-                  <span class="ranking-item__title">A Vegetariana: Han Kang</span>
-                  <div class="ranking-item__meta">
-                    <span class="ranking-item__score">9.8</span>
-                    <span class="ranking-item__dot">•</span>
-                    <span class="ranking-item__comments">112 comentários</span>
-                  </div>
-                </div>
-              </div>
-              <div class="ranking-item">
-                <span class="ranking-item__rank">03</span>
-                <div class="ranking-item__content">
-                  <span class="ranking-item__title">Torto Arado: Itamar Vieira Junior</span>
-                  <div class="ranking-item__meta">
-                    <span class="ranking-item__score">9.5</span>
-                    <span class="ranking-item__dot">•</span>
-                    <span class="ranking-item__comments">94 comentários</span>
-                  </div>
-                </div>
-              </div>
-              <div class="ranking-item">
-                <span class="ranking-item__rank">04</span>
-                <div class="ranking-item__content">
-                  <span class="ranking-item__title">O Avesso da Pele: Jeferson Tenório</span>
-                  <div class="ranking-item__meta">
-                    <span class="ranking-item__score">9.7</span>
-                    <span class="ranking-item__dot">•</span>
-                    <span class="ranking-item__comments">79 comentários</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="sidebar-card">
+						<div class="sidebar-card__header">
+							<h4 class="sidebar-card__title">MAIS COMENTADAS</h4>
+							<span class="sidebar-card__subtitle">Últimos 7 dias</span>
+						</div>
+						<div class="ranking-list">
+							<div class="ranking-item">
+								<span class="ranking-item__rank ranking-item__rank--top"
+									>01</span
+								>
+								<div class="ranking-item__content">
+									<span class="ranking-item__title"
+										>A Redoma de Vidro: Sylvia Plath</span
+									>
+									<div class="ranking-item__meta">
+										<span class="ranking-item__score">9.9</span>
+										<span class="ranking-item__dot">•</span>
+										<span class="ranking-item__comments">148 comentários</span>
+									</div>
+								</div>
+							</div>
+							<div class="ranking-item">
+								<span class="ranking-item__rank">02</span>
+								<div class="ranking-item__content">
+									<span class="ranking-item__title"
+										>A Vegetariana: Han Kang</span
+									>
+									<div class="ranking-item__meta">
+										<span class="ranking-item__score">9.8</span>
+										<span class="ranking-item__dot">•</span>
+										<span class="ranking-item__comments">112 comentários</span>
+									</div>
+								</div>
+							</div>
+							<div class="ranking-item">
+								<span class="ranking-item__rank">03</span>
+								<div class="ranking-item__content">
+									<span class="ranking-item__title"
+										>Torto Arado: Itamar Vieira Junior</span
+									>
+									<div class="ranking-item__meta">
+										<span class="ranking-item__score">9.5</span>
+										<span class="ranking-item__dot">•</span>
+										<span class="ranking-item__comments">94 comentários</span>
+									</div>
+								</div>
+							</div>
+							<div class="ranking-item">
+								<span class="ranking-item__rank">04</span>
+								<div class="ranking-item__content">
+									<span class="ranking-item__title"
+										>O Avesso da Pele: Jeferson Tenório</span
+									>
+									<div class="ranking-item__meta">
+										<span class="ranking-item__score">9.7</span>
+										<span class="ranking-item__dot">•</span>
+										<span class="ranking-item__comments">79 comentários</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="sidebar-card">
-            <div class="suggestion-icon-row">
-              <span class="suggestion-icon">✎</span>
-              <span class="suggestion-label">PAUTA ABERTA</span>
-            </div>
-            <h4 class="suggestion-heading">Sugira uma Obra para Escrutínio</h4>
-            <p class="sidebar-card__desc">Sentiu falta de algum título fundamental ou quer ver uma obra contemporânea sob o escrutínio Livrário? Envie sua sugestão.</p>
-            <form class="suggestion-form">
-              <input class="suggestion-form__input" type="text" placeholder="Título da obra e autor" />
-              <button class="suggestion-form__submit" type="submit">Enviar sugestão</button>
-            </form>
-          </div>
-        </aside>
-      </div>
-    </main>
+					<div class="sidebar-card">
+						<div class="suggestion-icon-row">
+							<span class="suggestion-icon">✎</span>
+							<span class="suggestion-label">PAUTA ABERTA</span>
+						</div>
+						<h4 class="suggestion-heading">Sugira uma Obra para Escrutínio</h4>
+						<p class="sidebar-card__desc">
+							Sentiu falta de algum título fundamental ou quer ver uma obra
+							contemporânea sob o escrutínio Livrário? Envie sua sugestão.
+						</p>
+						<form class="suggestion-form">
+							<input
+								class="suggestion-form__input"
+								type="text"
+								placeholder="Título da obra e autor" />
+							<button
+								class="suggestion-form__submit"
+								type="submit">
+								Enviar sugestão
+							</button>
+						</form>
+					</div>
+				</aside>
+			</div>
+		</main>
 
-    <footer class="site-footer">
-      <div class="site-footer__main">
-        <div class="site-footer__brand-column">
-          <div class="site-footer__brand-name">Livrário</div>
-          <div class="site-footer__brand-tagline">CURADORIA</div>
-          <p class="site-footer__brand-desc">Um refúgio para quem busca profundidade literária, resenhas estruturais e curadoria independente.</p>
-          <div class="page-overline">MANIFESTO EDITORIAL</div>
-          <p class="site-footer__brand-desc">Independência na crítica, fascínio pelo clássico e reverência pela palavra precisa.</p>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-column__title">NAVEGAÇÃO</h4>
-          <a class="footer-link" href="/index.html">Home</a>
-          <a class="footer-link" href="/resenhas.html">Resenhas Literárias</a>
-          <a class="footer-link" href="/listas.html">Listas &amp; Recomendações</a>
-          <a class="footer-link" href="/autores.html">Autores &amp; Clássicos</a>
-          <a class="footer-link" href="/contato.html">Contato</a>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-column__title">INSTITUCIONAL</h4>
-          <a class="footer-link" href="/index.html">Sobre o Livrário</a>
-          <a class="footer-link" href="/index.html">Política Editorial</a>
-          <a class="footer-link" href="/index.html">Privacidade &amp; Termos</a>
-          <a class="footer-link" href="/contato.html">Fale Conosco</a>
-        </div>
-        <div class="site-footer__newsletter-wrap">
-          <span class="page-overline" style="font-weight:600">A CARTA QUINZENAL</span>
-          <p class="page-desc--body">Ensaios inéditos, lançamentos comentados e garimpos raros direto na sua caixa de entrada.</p>
-          <form class="newsletter-form" onsubmit="return false">
-            <input class="newsletter-form__input" type="email" name="email" placeholder="Seu e-mail literário" required />
-            <button class="cta-button" type="submit">Inscrever-se</button>
-          </form>
-        </div>
-      </div>
-      <hr class="site-footer__divider" />
-      <div class="site-footer__bottom">
-        <span class="site-footer__copyright">© 2025 Livrário. Todos os direitos reservados. Feito com rigor intelectual.</span>
-        <div class="site-footer__edition">
-          <span class="site-footer__edition-dot"></span>
-          <span class="site-footer__edition-text">Edição Semanal Ativa</span>
-        </div>
-      </div>
-    </footer>
+		<footer class="site-footer">
+			<div class="site-footer__main">
+				<div class="site-footer__brand-column">
+					<div class="site-footer__brand-name">Livrário</div>
+					<div class="site-footer__brand-tagline">CURADORIA</div>
+					<p class="site-footer__brand-desc">
+						Um refúgio para quem busca profundidade literária, resenhas
+						estruturais e curadoria independente.
+					</p>
+					<div class="page-overline">MANIFESTO EDITORIAL</div>
+					<p class="site-footer__brand-desc">
+						Independência na crítica, fascínio pelo clássico e reverência pela
+						palavra precisa.
+					</p>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-column__title">NAVEGAÇÃO</h4>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Home</a
+					>
+					<a
+						class="footer-link"
+						href="/resenhas.html"
+						>Resenhas Literárias</a
+					>
+					<a
+						class="footer-link"
+						href="/listas.html"
+						>Listas &amp; Recomendações</a
+					>
+					<a
+						class="footer-link"
+						href="/autores.html"
+						>Autores &amp; Clássicos</a
+					>
+					<a
+						class="footer-link"
+						href="/contato.html"
+						>Contato</a
+					>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-column__title">INSTITUCIONAL</h4>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Sobre o Livrário</a
+					>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Política Editorial</a
+					>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Privacidade &amp; Termos</a
+					>
+					<a
+						class="footer-link"
+						href="/contato.html"
+						>Fale Conosco</a
+					>
+				</div>
+				<div class="site-footer__newsletter-wrap">
+					<span
+						class="page-overline"
+						style="font-weight: 600"
+						>A CARTA QUINZENAL</span
+					>
+					<p class="page-desc--body">
+						Ensaios inéditos, lançamentos comentados e garimpos raros direto na
+						sua caixa de entrada.
+					</p>
+					<form
+						class="newsletter-form"
+						onsubmit="return false;">
+						<input
+							class="newsletter-form__input"
+							type="email"
+							name="email"
+							placeholder="Seu e-mail literário"
+							required />
+						<button
+							class="cta-button"
+							type="submit">
+							Inscrever-se
+						</button>
+					</form>
+				</div>
+			</div>
+			<hr class="site-footer__divider" />
+			<div class="site-footer__bottom">
+				<span class="site-footer__copyright"
+					>© 2026 Livrário. Todos os direitos reservados. Feito com rigor
+					intelectual.</span
+				>
+				<div class="site-footer__edition">
+					<span class="site-footer__edition-dot"></span>
+					<span class="site-footer__edition-text">Edição Semanal Ativa</span>
+				</div>
+			</div>
+		</footer>
 
-    <script type="module" src="/src/pages/interactive.ts"></script>
-  </body>
+		<script
+			type="module"
+			src="/src/pages/interactive.ts"></script>
+	</body>
 </html>

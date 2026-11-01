@@ -1,264 +1,534 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Livrário — Análises Literárias</title>
-    <link rel="stylesheet" href="/src/theme/tokens.css" />
-    <link rel="stylesheet" href="/src/theme/typography.css" />
-    <link rel="stylesheet" href="/src/theme/spacing.css" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/pages/page.css" />
-    <link rel="stylesheet" href="/src/pages/home/home.css" />
-    <link rel="stylesheet" href="/src/pages/footer.css" />
-    <link rel="stylesheet" href="/src/components/header/header.css" />
-    <link rel="stylesheet" href="/src/components/brand-logo/brand-logo.css" />
-    <link rel="stylesheet" href="/src/components/nav-link/nav-link.css" />
-    <link rel="stylesheet" href="/src/components/cta-button/cta-button.css" />
-    <link rel="stylesheet" href="/src/components/inline-link/inline-link.css" />
-    <link rel="stylesheet" href="/src/components/metric-card/metric-card.css" />
-    <link rel="stylesheet" href="/src/components/newsletter-form/newsletter-form.css" />
-    <link rel="stylesheet" href="/src/components/footer-column/footer-column.css" />
-    <link rel="stylesheet" href="/src/components/footer-link/footer-link.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="brand-logo">
-        <span class="brand-logo__title">Livrário</span>
-        <span class="brand-logo__tagline">CURADORIA</span>
-      </div>
-      <nav class="header__nav">
-        <a href="/index.html" class="nav-link nav-link--active" aria-current="page">Home</a>
-        <a href="/resenhas.html" class="nav-link">Resenhas Literárias</a>
-        <a href="/listas.html" class="nav-link">Listas &amp; Recomendações</a>
-        <a href="/autores.html" class="nav-link">Autores &amp; Clássicos</a>
-        <a href="/contato.html" class="nav-link">Contato</a>
-      </nav>
-      <button class="cta-button" type="button">Clube do Livro</button>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Livrário — Análises Literárias</title>
+		<link
+			rel="stylesheet"
+			href="/src/theme/tokens.css" />
+		<link
+			rel="stylesheet"
+			href="/src/theme/typography.css" />
+		<link
+			rel="stylesheet"
+			href="/src/theme/spacing.css" />
+		<link
+			rel="stylesheet"
+			href="/src/style.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/page.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/home/home.css" />
+		<link
+			rel="stylesheet"
+			href="/src/pages/footer.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/header/header.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/brand-logo/brand-logo.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/nav-link/nav-link.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/cta-button/cta-button.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/inline-link/inline-link.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/metric-card/metric-card.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/newsletter-form/newsletter-form.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/footer-column/footer-column.css" />
+		<link
+			rel="stylesheet"
+			href="/src/components/footer-link/footer-link.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="brand-logo">
+				<span class="brand-logo__title">Livrário</span>
+				<span class="brand-logo__tagline">CURADORIA</span>
+			</div>
+			<nav class="header__nav">
+				<a
+					href="/index.html"
+					class="nav-link nav-link--active"
+					aria-current="page"
+					>Home</a
+				>
+				<a
+					href="/resenhas.html"
+					class="nav-link"
+					>Resenhas Literárias</a
+				>
+				<a
+					href="/listas.html"
+					class="nav-link"
+					>Listas &amp; Recomendações</a
+				>
+				<a
+					href="/autores.html"
+					class="nav-link"
+					>Autores &amp; Clássicos</a
+				>
+				<a
+					href="/contato.html"
+					class="nav-link"
+					>Contato</a
+				>
+			</nav>
+			<button
+				class="cta-button"
+				type="button">
+				Clube do Livro
+			</button>
+		</header>
 
-    <main class="page-wrapper">
-      <section class="page-section--compact">
-        <div class="home-hero">
-          <div class="home-hero__content">
-            <div class="page-overline">OBSERVATÓRIO CRÍTICO PERMANENTE</div>
-            <h1 class="page-heading--hero">Rigor intelectual para leitores em busca de permanência.</h1>
-            <p class="page-desc--hero">O Livrário rejeita a superficialidade algorítmica. Produzimos crítica literária independente, ensaios estruturais e debates aprofundados sobre a literatura que molda nossa percepção do tempo, da memória e da linguagem.</p>
-            <div class="home-hero__cta-row">
-              <button class="cta-button" type="button">Explorar Acervo Crítico</button>
-              <button class="cta-button cta-button--ghost" type="button">Ciclo Atual do Clube</button>
-            </div>
-          </div>
-          <div class="home-stats">
-            <div class="home-stats__row">
-              <div class="metric-card home-stats__card">
-                <span class="metric-card__value" data-count-to="420">420+</span>
-                <span class="metric-card__label">ENSAIOS<br/>PUBLICADOS</span>
-              </div>
-              <div class="metric-card home-stats__card">
-                <span class="metric-card__value" data-count-to="3400">3.4k</span>
-                <span class="metric-card__label">MEMBROS ATIVOS</span>
-              </div>
-            </div>
-            <div class="home-stats__row">
-              <div class="metric-card home-stats__card">
-                <span class="metric-card__value" data-count-to="14">14 min</span>
-                <span class="metric-card__label">TEMPO MÉDIO<br/>LEITURA</span>
-              </div>
-              <div class="metric-card home-stats__card">
-                <span class="metric-card__value" data-count-to="92">91.8%</span>
-                <span class="metric-card__label">ÍNDICE<br/>CONCLUSÃO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+		<main class="page-wrapper">
+			<section class="page-section--compact">
+				<div class="home-hero">
+					<div class="home-hero__content">
+						<div class="page-overline">OBSERVATÓRIO CRÍTICO PERMANENTE</div>
+						<h1 class="page-heading--hero">
+							Rigor intelectual para leitores em busca de permanência.
+						</h1>
+						<p class="page-desc--hero">
+							O Livrário rejeita a superficialidade algorítmica. Produzimos
+							crítica literária independente, ensaios estruturais e debates
+							aprofundados sobre a literatura que molda nossa percepção do
+							tempo, da memória e da linguagem.
+						</p>
+						<div class="home-hero__cta-row">
+							<button
+								class="cta-button"
+								type="button">
+								Explorar Acervo Crítico
+							</button>
+							<button
+								class="cta-button cta-button--ghost"
+								type="button">
+								Ciclo Atual do Clube
+							</button>
+						</div>
+					</div>
+					<div class="home-stats">
+						<div class="home-stats__row">
+							<div class="metric-card home-stats__card">
+								<span
+									class="metric-card__value"
+									data-count-to="420"
+									>420+</span
+								>
+								<span class="metric-card__label">ENSAIOS<br />PUBLICADOS</span>
+							</div>
+							<div class="metric-card home-stats__card">
+								<span
+									class="metric-card__value"
+									data-count-to="3400"
+									>3.4k</span
+								>
+								<span class="metric-card__label">MEMBROS ATIVOS</span>
+							</div>
+						</div>
+						<div class="home-stats__row">
+							<div class="metric-card home-stats__card">
+								<span
+									class="metric-card__value"
+									data-count-to="14"
+									>14 min</span
+								>
+								<span class="metric-card__label">TEMPO MÉDIO<br />LEITURA</span>
+							</div>
+							<div class="metric-card home-stats__card">
+								<span
+									class="metric-card__value"
+									data-count-to="92"
+									>91.8%</span
+								>
+								<span class="metric-card__label">ÍNDICE<br />CONCLUSÃO</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section class="page-section">
-        <div class="page-col" style="gap:48px;width:100%">
-          <div class="page-row--gap-sm" style="flex-direction:column;gap:7px">
-            <span class="page-overline">CAMINHOS DE NAVEGAÇÃO</span>
-            <h2 class="page-heading--medium">Pilares de Curadoria</h2>
-          </div>
-          <div class="page-row--gap-sm">
-            <article class="pillar-card">
-              <div class="pillar-card__image">
-                <div class="pillar-card__overlay"></div>
-                <span class="pillar-card__tag">COLUNA CRÍTICA</span>
-              </div>
-              <div class="pillar-card__body">
-                <span class="pillar-card__caderno">Caderno I</span>
-                <h3 class="pillar-card__title">Resenhas Literárias</h3>
-                <p class="pillar-card__desc">Ensaios analíticos detalhados sobre obras contemporâneas e clássicas, com foco em estrutura narrativa e contexto histórico.</p>
-                <a class="inline-link" href="/resenhas.html">
-                  <span class="inline-link__label">Explorar Resenhas</span>
-                  <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </a>
-              </div>
-            </article>
-            <article class="pillar-card">
-              <div class="pillar-card__image">
-                <div class="pillar-card__overlay"></div>
-                <span class="pillar-card__tag">ROTEIROS DE LEITURA</span>
-              </div>
-              <div class="pillar-card__body">
-                <span class="pillar-card__caderno">Caderno II</span>
-                <h3 class="pillar-card__title">Listas &amp; Recomendações</h3>
-                <p class="pillar-card__desc">Guias temáticos de leitura, seleções por humor e ritmo de absorção para orientar sua próxima experiência literária.</p>
-                <a class="inline-link" href="/listas.html">
-                  <span class="inline-link__label">Ver Listas</span>
-                  <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </a>
-              </div>
-            </article>
-            <article class="pillar-card">
-              <div class="pillar-card__image">
-                <div class="pillar-card__overlay"></div>
-                <span class="pillar-card__tag">RETROSPECTIVAS</span>
-              </div>
-              <div class="pillar-card__body">
-                <span class="pillar-card__caderno">Caderno III</span>
-                <h3 class="pillar-card__title">Autores &amp; Clássicos</h3>
-                <p class="pillar-card__desc">Monografias e retrospectivas dos gigantes da literatura mundial e suas redes de influência através dos séculos.</p>
-                <a class="inline-link" href="/autores.html">
-                  <span class="inline-link__label">Descobrir Clássicos</span>
-                  <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+			<section class="page-section">
+				<div
+					class="page-col"
+					style="gap: 48px; width: 100%">
+					<div
+						class="page-row--gap-sm"
+						style="flex-direction: column; gap: 7px">
+						<span class="page-overline">CAMINHOS DE NAVEGAÇÃO</span>
+						<h2 class="page-heading--medium">Pilares de Curadoria</h2>
+					</div>
+					<div class="page-row--gap-sm">
+						<article class="pillar-card">
+							<div class="pillar-card__image">
+								<div class="pillar-card__overlay"></div>
+								<span class="pillar-card__tag">COLUNA CRÍTICA</span>
+							</div>
+							<div class="pillar-card__body">
+								<span class="pillar-card__caderno">Caderno I</span>
+								<h3 class="pillar-card__title">Resenhas Literárias</h3>
+								<p class="pillar-card__desc">
+									Ensaios analíticos detalhados sobre obras contemporâneas e
+									clássicas, com foco em estrutura narrativa e contexto
+									histórico.
+								</p>
+								<a
+									class="inline-link"
+									href="/resenhas.html">
+									<span class="inline-link__label">Explorar Resenhas</span>
+									<svg
+										class="svg-icon"
+										viewBox="0 0 24 24"
+										width="16"
+										height="16"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										aria-hidden="true">
+										<path d="M5 12h14M13 6l6 6-6 6" />
+									</svg>
+								</a>
+							</div>
+						</article>
+						<article class="pillar-card">
+							<div class="pillar-card__image">
+								<div class="pillar-card__overlay"></div>
+								<span class="pillar-card__tag">ROTEIROS DE LEITURA</span>
+							</div>
+							<div class="pillar-card__body">
+								<span class="pillar-card__caderno">Caderno II</span>
+								<h3 class="pillar-card__title">Listas &amp; Recomendações</h3>
+								<p class="pillar-card__desc">
+									Guias temáticos de leitura, seleções por humor e ritmo de
+									absorção para orientar sua próxima experiência literária.
+								</p>
+								<a
+									class="inline-link"
+									href="/listas.html">
+									<span class="inline-link__label">Ver Listas</span>
+									<svg
+										class="svg-icon"
+										viewBox="0 0 24 24"
+										width="16"
+										height="16"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										aria-hidden="true">
+										<path d="M5 12h14M13 6l6 6-6 6" />
+									</svg>
+								</a>
+							</div>
+						</article>
+						<article class="pillar-card">
+							<div class="pillar-card__image">
+								<div class="pillar-card__overlay"></div>
+								<span class="pillar-card__tag">RETROSPECTIVAS</span>
+							</div>
+							<div class="pillar-card__body">
+								<span class="pillar-card__caderno">Caderno III</span>
+								<h3 class="pillar-card__title">Autores &amp; Clássicos</h3>
+								<p class="pillar-card__desc">
+									Monografias e retrospectivas dos gigantes da literatura
+									mundial e suas redes de influência através dos séculos.
+								</p>
+								<a
+									class="inline-link"
+									href="/autores.html">
+									<span class="inline-link__label">Descobrir Clássicos</span>
+									<svg
+										class="svg-icon"
+										viewBox="0 0 24 24"
+										width="16"
+										height="16"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										aria-hidden="true">
+										<path d="M5 12h14M13 6l6 6-6 6" />
+									</svg>
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
 
-      <div class="home-book">
-        <div class="home-book__details">
-          <div class="home-book__header-row">
-            <div class="home-book__badge"></div>
-            <div class="page-overline" style="font-weight:600">LEITURA DO CICLO</div>
-          </div>
-          <p class="page-desc--sub">Novembro / Dezembro 2025</p>
-          <h2 class="home-book__book-title">Memórias Póstumas de Brás Cubas</h2>
-          <p class="home-book__meta">Machado de Assis — Edição Crítica Comentada</p>
-          <p class="home-book__synopsis">Narrado por um defunto-autor que zomba da mediocridade da elite carioca oitocentista, o romance fundador do realismo brasileiro é dissecado em 12 ensaios complementares.</p>
+			<div class="home-book">
+				<div class="home-book__details">
+					<div class="home-book__header-row">
+						<div class="home-book__badge"></div>
+						<div
+							class="page-overline"
+							style="font-weight: 600">
+							LEITURA DO CICLO
+						</div>
+					</div>
+					<p class="page-desc--sub">Novembro / Dezembro 2026</p>
+					<h2 class="home-book__book-title">Memórias Póstumas de Brás Cubas</h2>
+					<p class="home-book__meta">
+						Machado de Assis — Edição Crítica Comentada
+					</p>
+					<p class="home-book__synopsis">
+						Narrado por um defunto-autor que zomba da mediocridade da elite
+						carioca oitocentista, o romance fundador do realismo brasileiro é
+						dissecado em 12 ensaios complementares.
+					</p>
 
-          <div class="home-book__schedule">
-            <div class="home-book__schedule-header">
-              <span class="page-overline">Cronograma Coletivo de Absorção</span>
-              <span style="font-size:12px;font-weight:500;color:var(--text-primary)">Semana 3 de 4 (Cap. XL ao CX)</span>
-            </div>
-            <div class="home-book__progress-bar"><div class="home-book__progress-fill"></div></div>
-            <div class="home-book__dates">
-              <div class="home-book__date-card">
-                <span class="home-book__date-day">12 Nov</span>
-                <span class="home-book__date-desc">Início e prólogo</span>
-              </div>
-              <div class="home-book__date-card">
-                <span class="home-book__date-day">28 Nov</span>
-                <span class="home-book__date-desc">Capítulos centrais</span>
-              </div>
-              <div class="home-book__date-card">
-                <span class="home-book__date-day">08 Dez, 19:30</span>
-                <span class="home-book__date-desc">Sessão síncrona</span>
-              </div>
-            </div>
-          </div>
+					<div class="home-book__schedule">
+						<div class="home-book__schedule-header">
+							<span class="page-overline">Cronograma Coletivo de Absorção</span>
+							<span
+								style="
+									font-size: 12px;
+									font-weight: 500;
+									color: var(--text-primary);
+								"
+								>Semana 3 de 4 (Cap. XL ao CX)</span
+							>
+						</div>
+						<div class="home-book__progress-bar">
+							<div class="home-book__progress-fill"></div>
+						</div>
+						<div class="home-book__dates">
+							<div class="home-book__date-card">
+								<span class="home-book__date-day">12 Nov</span>
+								<span class="home-book__date-desc">Início e prólogo</span>
+							</div>
+							<div class="home-book__date-card">
+								<span class="home-book__date-day">28 Nov</span>
+								<span class="home-book__date-desc">Capítulos centrais</span>
+							</div>
+							<div class="home-book__date-card">
+								<span class="home-book__date-day">08 Dez, 19:30</span>
+								<span class="home-book__date-desc">Sessão síncrona</span>
+							</div>
+						</div>
+					</div>
 
-          <div class="home-book__actions">
-            <a class="inline-link" href="#">
-              <span class="inline-link__label">Acessar Guia de Estudo e Fórum</span>
-              <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <button class="cta-button" type="button">Confirmar Presença no Debate</button>
-          </div>
-        </div>
+					<div class="home-book__actions">
+						<a
+							class="inline-link"
+							href="#">
+							<span class="inline-link__label"
+								>Acessar Guia de Estudo e Fórum</span
+							>
+							<svg
+								class="svg-icon"
+								viewBox="0 0 24 24"
+								width="16"
+								height="16"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								aria-hidden="true">
+								<path d="M5 12h14M13 6l6 6-6 6" />
+							</svg>
+						</a>
+						<button
+							class="cta-button"
+							type="button">
+							Confirmar Presença no Debate
+						</button>
+					</div>
+				</div>
 
-        <aside class="book-card">
-          <div class="book-card__visual">
-            <div class="book-card__gradient"></div>
-            <span class="book-card__badge">CLUBE DO LIVRÁRIO · #42</span>
-            <h3 class="book-card__title">Memórias Póstumas</h3>
-            <p class="book-card__subtitle">"Ao verme que primeiro roeu as frias carnes..."</p>
-          </div>
-          <div class="book-card__stats">
-            <span class="book-card__stat">160 Páginas Críticas</span>
-            <span class="book-card__stat">Encontro: 08/Dez</span>
-          </div>
-          <p class="book-card__note">Transmissão via áudio fechado e transcrição em ensaio síntese.</p>
-        </aside>
-      </div>
+				<aside class="book-card">
+					<div class="book-card__visual">
+						<div class="book-card__gradient"></div>
+						<span class="book-card__badge">CLUBE DO LIVRÁRIO · #42</span>
+						<h3 class="book-card__title">Memórias Póstumas</h3>
+						<p class="book-card__subtitle">
+							"Ao verme que primeiro roeu as frias carnes..."
+						</p>
+					</div>
+					<div class="book-card__stats">
+						<span class="book-card__stat">160 Páginas Críticas</span>
+						<span class="book-card__stat">Encontro: 08/Dez</span>
+					</div>
+					<p class="book-card__note">
+						Transmissão via áudio fechado e transcrição em ensaio síntese.
+					</p>
+				</aside>
+			</div>
 
-      <section class="page-section--flush-bottom">
-        <div class="home-newsletter">
-          <div class="page-overline" style="font-weight:500">CORRESPONDÊNCIA DIRETA</div>
-          <h2 class="page-heading--large">A Carta Literária</h2>
-          <p class="page-desc--sub">Quinzenalmente aos domingos, às 08h. Sem resumos simplistas, sem algoritmos de recomendação. Apenas ensaios inéditos, lançamentos comentados e garimpos raros entregues direto na sua caixa de entrada.</p>
+			<section class="page-section--flush-bottom">
+				<div class="home-newsletter">
+					<div
+						class="page-overline"
+						style="font-weight: 500">
+						CORRESPONDÊNCIA DIRETA
+					</div>
+					<h2 class="page-heading--large">A Carta Literária</h2>
+					<p class="page-desc--sub">
+						Quinzenalmente aos domingos, às 08h. Sem resumos simplistas, sem
+						algoritmos de recomendação. Apenas ensaios inéditos, lançamentos
+						comentados e garimpos raros entregues direto na sua caixa de
+						entrada.
+					</p>
 
-          <form class="newsletter-form" onsubmit="return false">
-            <input class="newsletter-form__input" type="email" name="email" placeholder="Seu endereço de e-mail..." required />
-            <button class="cta-button" type="submit">Assinar Carta</button>
-          </form>
+					<form
+						class="newsletter-form"
+						onsubmit="return false;">
+						<input
+							class="newsletter-form__input"
+							type="email"
+							name="email"
+							placeholder="Seu endereço de e-mail..."
+							required />
+						<button
+							class="cta-button"
+							type="submit">
+							Assinar Carta
+						</button>
+					</form>
 
-          <div class="home-newsletter__features">
-            <div class="home-newsletter__feature">
-              <span class="home-newsletter__feature-icon">✓</span>
-              <span class="home-newsletter__feature-text">Leitura sem distrações</span>
-            </div>
-            <div class="home-newsletter__feature">
-              <span class="home-newsletter__feature-icon">✓</span>
-              <span class="home-newsletter__feature-text">Cancelamento em 1 clique</span>
-            </div>
-            <div class="home-newsletter__feature">
-              <span class="home-newsletter__feature-icon">✓</span>
-              <span class="home-newsletter__feature-text">Gratuito</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+					<div class="home-newsletter__features">
+						<div class="home-newsletter__feature">
+							<span class="home-newsletter__feature-icon">✓</span>
+							<span class="home-newsletter__feature-text"
+								>Leitura sem distrações</span
+							>
+						</div>
+						<div class="home-newsletter__feature">
+							<span class="home-newsletter__feature-icon">✓</span>
+							<span class="home-newsletter__feature-text"
+								>Cancelamento em 1 clique</span
+							>
+						</div>
+						<div class="home-newsletter__feature">
+							<span class="home-newsletter__feature-icon">✓</span>
+							<span class="home-newsletter__feature-text">Gratuito</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <footer class="site-footer">
-      <div class="site-footer__main">
-        <div class="site-footer__brand-column">
-          <div class="site-footer__brand-name">Livrário</div>
-          <div class="site-footer__brand-tagline">CURADORIA</div>
-          <p class="site-footer__brand-desc">Um refúgio para quem busca profundidade literária, resenhas estruturais e curadoria independente.</p>
-          <div class="page-overline">MANIFESTO EDITORIAL</div>
-          <p class="site-footer__brand-desc">Independência na crítica, fascínio pelo clássico e reverência pela palavra precisa.</p>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-column__title">NAVEGAÇÃO</h4>
-          <a class="footer-link" href="/index.html">Home</a>
-          <a class="footer-link" href="/resenhas.html">Resenhas Literárias</a>
-          <a class="footer-link" href="/listas.html">Listas &amp; Recomendações</a>
-          <a class="footer-link" href="/autores.html">Autores &amp; Clássicos</a>
-          <a class="footer-link" href="/contato.html">Contato</a>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-column__title">INSTITUCIONAL</h4>
-          <a class="footer-link" href="/index.html">Sobre o Livrário</a>
-          <a class="footer-link" href="/index.html">Política Editorial</a>
-          <a class="footer-link" href="/index.html">Privacidade &amp; Termos</a>
-          <a class="footer-link" href="/contato.html">Fale Conosco</a>
-        </div>
-        <div class="site-footer__newsletter-wrap">
-          <span class="page-overline" style="font-weight:600">A CARTA QUINZENAL</span>
-          <p class="page-desc--body">Ensaios inéditos, lançamentos comentados e garimpos raros direto na sua caixa de entrada.</p>
-          <form class="newsletter-form" onsubmit="return false">
-            <input class="newsletter-form__input" type="email" name="email" placeholder="Seu e-mail literário" required />
-            <button class="cta-button" type="submit">Inscrever-se</button>
-          </form>
-        </div>
-      </div>
-      <hr class="site-footer__divider" />
-      <div class="site-footer__bottom">
-        <span class="site-footer__copyright">© 2025 Livrário. Todos os direitos reservados. Feito com rigor intelectual.</span>
-        <div class="site-footer__edition">
-          <span class="site-footer__edition-dot"></span>
-          <span class="site-footer__edition-text">Edição Semanal Ativa</span>
-        </div>
-      </div>
-    </footer>
+		<footer class="site-footer">
+			<div class="site-footer__main">
+				<div class="site-footer__brand-column">
+					<div class="site-footer__brand-name">Livrário</div>
+					<div class="site-footer__brand-tagline">CURADORIA</div>
+					<p class="site-footer__brand-desc">
+						Um refúgio para quem busca profundidade literária, resenhas
+						estruturais e curadoria independente.
+					</p>
+					<div class="page-overline">MANIFESTO EDITORIAL</div>
+					<p class="site-footer__brand-desc">
+						Independência na crítica, fascínio pelo clássico e reverência pela
+						palavra precisa.
+					</p>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-column__title">NAVEGAÇÃO</h4>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Home</a
+					>
+					<a
+						class="footer-link"
+						href="/resenhas.html"
+						>Resenhas Literárias</a
+					>
+					<a
+						class="footer-link"
+						href="/listas.html"
+						>Listas &amp; Recomendações</a
+					>
+					<a
+						class="footer-link"
+						href="/autores.html"
+						>Autores &amp; Clássicos</a
+					>
+					<a
+						class="footer-link"
+						href="/contato.html"
+						>Contato</a
+					>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-column__title">INSTITUCIONAL</h4>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Sobre o Livrário</a
+					>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Política Editorial</a
+					>
+					<a
+						class="footer-link"
+						href="/index.html"
+						>Privacidade &amp; Termos</a
+					>
+					<a
+						class="footer-link"
+						href="/contato.html"
+						>Fale Conosco</a
+					>
+				</div>
+				<div class="site-footer__newsletter-wrap">
+					<span
+						class="page-overline"
+						style="font-weight: 600"
+						>A CARTA QUINZENAL</span
+					>
+					<p class="page-desc--body">
+						Ensaios inéditos, lançamentos comentados e garimpos raros direto na
+						sua caixa de entrada.
+					</p>
+					<form
+						class="newsletter-form"
+						onsubmit="return false;">
+						<input
+							class="newsletter-form__input"
+							type="email"
+							name="email"
+							placeholder="Seu e-mail literário"
+							required />
+						<button
+							class="cta-button"
+							type="submit">
+							Inscrever-se
+						</button>
+					</form>
+				</div>
+			</div>
+			<hr class="site-footer__divider" />
+			<div class="site-footer__bottom">
+				<span class="site-footer__copyright"
+					>© 2026 Livrário. Todos os direitos reservados. Feito com rigor
+					intelectual.</span
+				>
+				<div class="site-footer__edition">
+					<span class="site-footer__edition-dot"></span>
+					<span class="site-footer__edition-text">Edição Semanal Ativa</span>
+				</div>
+			</div>
+		</footer>
 
-    <script type="module" src="/src/pages/interactive.ts"></script>
-  </body>
+		<script
+			type="module"
+			src="/src/pages/interactive.ts"></script>
+	</body>
 </html>
