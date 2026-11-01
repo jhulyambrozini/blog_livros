@@ -1,0 +1,31 @@
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.filter-pill:hover {
+  color: var(--text-primary);
+}
+
+.filter-pill--active {
+  color: var(--accent-purple);
+  border-color: var(--accent-purple);
+}
+
+.filter-pill:focus-visible {
+  outline: 2px solid var(--accent-purple);
+  outline-offset: 2px;
+}

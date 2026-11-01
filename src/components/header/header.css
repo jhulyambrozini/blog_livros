@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  width: 100%;
+  padding: 0 var(--pad-section);
+  height: 64px;
+  background: var(--bg-dark);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xl);
+}

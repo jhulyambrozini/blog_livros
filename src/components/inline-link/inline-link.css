@@ -1,0 +1,29 @@
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inline-link__label {
+  line-height: 1;
+}
+
+.inline-link .svg-icon {
+  transition: transform 0.2s ease;
+}
+
+.inline-link:hover .svg-icon,
+.inline-link:focus-visible .svg-icon {
+  transform: translateX(3px);
+}
+
+.inline-link:focus-visible {
+  outline: 2px solid var(--accent-purple);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

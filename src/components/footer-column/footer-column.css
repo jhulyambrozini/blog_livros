@@ -1,0 +1,16 @@
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  width: 200px;
+}
+
+.footer-column__title {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}

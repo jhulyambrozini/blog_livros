@@ -1,0 +1,31 @@
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  width: 320px;
+  max-width: 100%;
+}
+
+.newsletter-form__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.newsletter-form__input::placeholder {
+  color: var(--text-muted);
+}
+
+.newsletter-form__input:focus {
+  border-color: var(--accent-purple);
+}
