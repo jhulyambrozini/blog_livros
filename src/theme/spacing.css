@@ -1,0 +1,10 @@
+.gap-xs { gap: var(--gap-xs); }
+.gap-sm { gap: var(--gap-sm); }
+.gap-md { gap: var(--gap-md); }
+.gap-lg { gap: var(--gap-lg); }
+.gap-xl { gap: var(--gap-xl); }
+
+.pad-card { padding: var(--pad-card); }
+.pad-section { padding: var(--pad-section); }
+.pad-input { padding: var(--pad-input); }
+.pad-top { padding: var(--pad-top); }

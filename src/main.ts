@@ -1,60 +1,64 @@
 import './style.css'
-import heroImg from './assets/hero.png'
-import typescriptLogo from './assets/typescript.svg'
-import viteLogo from './assets/vite.svg'
-import { setupCounter } from './counter.ts'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${typescriptLogo}" class="framework" alt="TypeScript logo"/>
-    <img src="${viteLogo}" class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.ts</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+const navLinks = document.querySelectorAll<HTMLAnchorElement>('header nav a')
+const sections = document.querySelectorAll<HTMLElement>('main section')
+const counters = document.querySelectorAll<HTMLElement>('.metric-counter .value')
 
-<div class="ticks"></div>
+document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault()
+    const target = document.querySelector(a.getAttribute('href')!)
+    if (target) target.scrollIntoView({ behavior: 'smooth' })
+  })
+})
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src="${viteLogo}" alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://www.typescriptlang.org" target="_blank">
-          <img class="button-icon" src="${typescriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+let ticking = false
+function animateCounters() {
+  if (ticking) return
+  counters.forEach(el => {
+    const target = parseInt(el.getAttribute('data-target')!)
+    if (target && parseInt(el.textContent!) < target) {
+      ticking = true
+      const step = Math.ceil(target / 60)
+      const timer = setInterval(() => {
+        const current = parseInt(el.textContent!)
+        if (current + step >= target) {
+          el.textContent = String(target)
+          clearInterval(timer)
+          ticking = false
+        } else {
+          el.textContent = String(current + step)
+        }
+      }, 16)
+    }
+  })
+}
 
-<div class="ticks"></div>
-<section id="spacer"></section>
-`
+function checkVisibility() {
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect()
+    if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
+      const id = section.getAttribute('id')
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === `#${id}`)
+      })
+    }
+  })
+  animateCounters()
+}
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+document.querySelector<HTMLFormElement>('#newsletter-form')?.addEventListener('submit', e => {
+  e.preventDefault()
+  const input = (e.currentTarget as HTMLFormElement).querySelector('input[type="email"]') as HTMLInputElement
+  alert(`Obrigado! ${input.value} foi inscrito na Carta Literária.`)
+  input.value = ''
+})
+
+document.querySelector<HTMLFormElement>('#contact-form')?.addEventListener('submit', e => {
+  e.preventDefault()
+  alert('Mensagem enviada com sucesso. Responderemos em breve.')
+  ;(e.currentTarget as HTMLFormElement).querySelectorAll('input, textarea').forEach(el => (el as HTMLInputElement).value = '')
+})
+
+window.addEventListener('scroll', checkVisibility)
+checkVisibility()

@@ -1,0 +1,29 @@
+:root {
+  --bg-dark: #121215;
+  --bg-surface: #18181b;
+  --bg-card: #27272a;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1a1;
+  --text-muted: #71717a;
+  --accent-purple: #a78bfa;
+  --accent-green: #34d399;
+  --cta-bg: #0a0012;
+
+  --font-body: Geist, system-ui, sans-serif;
+  --font-mono: 'Liberation Mono', ui-monospace, Consolas, monospace;
+  --font-serif: 'Liberation Serif', Georgia, serif;
+
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --gap-md: 12px;
+  --gap-lg: 16px;
+  --gap-xl: 24px;
+
+  --pad-card: 16px;
+  --pad-section: 24px;
+  --pad-input: 2px 8px;
+  --pad-top: 16px 0 0 0;
+
+  --radius-card: 12px;
+  --radius-button: 8px;
+}

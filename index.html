@@ -1,13 +1,172 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blog_livros</title>
+    <title>Livrário — Análises Literárias</title>
+    <link rel="stylesheet" href="/src/theme/theme.css" />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header" id="top-header">
+      <span class="text-h2">Livrário</span>
+      <nav>
+        <a href="#home" class="text-meta">Home</a>
+        <a href="#resenhas" class="text-meta">Resenhas</a>
+        <a href="#listas" class="text-meta">Listas</a>
+        <a href="#autores" class="text-meta">Autores</a>
+        <a href="#contato" class="text-meta">Contato</a>
+      </nav>
+      <button class="cta-button">Assine a Carta</button>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="hero-section">
+          <h1 class="text-hero">Rigor Intelectual</h1>
+          <p class="text-sub">Análises textuais verticalizadas, dissecação de estruturas narrativas e escrutínio de traduções.</p>
+          <div class="metric-counter">
+            <span class="value" data-target="342">0</span>
+            <span class="label">obras analisadas</span>
+          </div>
+        </div>
+
+        <div class="gap-xl" style="display:flex;flex-direction:column;padding:var(--pad-section)">
+          <div class="card-container">
+            <h2 class="text-h3">Pilares de Curadoria</h2>
+            <p class="text-body">Narrativa, Tradução, Contexto Histórico — três eixos que norteiam cada resenha.</p>
+          </div>
+
+          <div class="card-container" style="margin-top:var(--gap-md)">
+            <h2 class="text-h3">Destaque do Mês</h2>
+            <p class="text-sub">A Vegetariana — Han Kang</p>
+            <p class="text-body">Uma análise sobre a potência do silêncio como resistência política na obra vencedora do Booker Prize.</p>
+          </div>
+
+          <div class="card-container" style="margin-top:var(--gap-md)" id="newsletter">
+            <h2 class="text-h3">A Carta Literária</h2>
+            <p class="text-body">Receba análises exclusivas toda semana na sua caixa de entrada.</p>
+            <form id="newsletter-form" style="display:flex;gap:var(--gap-sm)">
+              <input class="pad-input" type="email" placeholder="seu@email.com" required />
+              <button class="cta-button" type="submit">Assinar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="resenhas">
+        <div class="hero-section">
+          <h2 class="text-h1">Resenhas Literárias</h2>
+          <p class="text-sub">Análises approfondadas de obras contemporâneas e clássicas.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:var(--pad-section);gap:var(--gap-md)">
+          <article class="card-container">
+            <span class="text-meta">14 min de leitura</span>
+            <h3 class="text-h4">Torto Arado — Itamar Vieira Junior</h3>
+            <p class="text-body">A terra, o corpo e a memória como campos de batalha. Uma leitura à luz da crítica pós-colonial.</p>
+          </article>
+          <article class="card-container">
+            <span class="text-meta">10 min de leitura</span>
+            <h3 class="text-h4">O Som do Sol — José Eduardo Agualusa</h3>
+            <p class="text-body">Ficção sonora e identidade na obra do angolano. A linguagem como território e resistência.</p>
+          </article>
+          <article class="card-container">
+            <span class="text-meta">12 min de leitura</span>
+            <h3 class="text-h4">Os Testamentos — Margaret Atwood</h3>
+            <p class="text-body">Eco distópico, narradoras não confiáveis e a política do corpo em The Testaments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="listas">
+        <div class="hero-section">
+          <h2 class="text-h1">Listas e Recomendações</h2>
+          <p class="text-sub">Curadorias temáticas para orientar sua próxima leitura.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:var(--pad-section);gap:var(--gap-md)">
+          <div class="card-container">
+            <h3 class="text-h4">5 Livros para Entender a América Latina</h3>
+            <p class="text-body">De Cem Anos de Solidão a Lavoura Arcaica, um percurso pelo imaginário latino-americano.</p>
+          </div>
+          <div class="card-container">
+            <h3 class="text-h4">Clássicos Subestimados do Século XX</h3>
+            <p class="text-body">Obras que merecem releitura urgente: A Paixão Segundo G.H., O Lobo da Estepe, A Morte de Ivan Ilitch.</p>
+          </div>
+          <div class="card-container">
+            <h3 class="text-h4">Traduções que São Obras de Arte</h3>
+            <p class="text-body">Quando o tradutor é também autor: Paulo Henriques Britto, Caetano Galindo, Ana Cláudia Santander.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="autores">
+        <div class="hero-section">
+          <h2 class="text-h1">Autores e Clássicos</h2>
+          <p class="text-sub">Dossiês monográficos e redes de influência.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:var(--pad-section);gap:var(--gap-md)">
+          <div class="card-container">
+            <h3 class="text-h4">Clarice Lispector</h3>
+            <p class="text-body">A linguagem como experiência limite. Da Perto do Coração Selvagem à Hora da Estrela.</p>
+            <span class="text-meta">Influências: Kafka, Virginia Woolf, Dostoievski</span>
+          </div>
+          <div class="card-container">
+            <h3 class="text-h4">Machado de Assis</h3>
+            <p class="text-body">O bruxo do cosmorama narrativo. Memórias Póstumas, Dom Casmurro e a invenção do realismo brasileiro.</p>
+            <span class="text-meta">Influências: Sterne, Swift, Eça de Queirós</span>
+          </div>
+          <div class="card-container">
+            <h3 class="text-h4">Gabriel García Márquez</h3>
+            <p class="text-body">O realismo mágico como leitura política. Cem Anos de Solidão, O Amor nos Tempos do Cólera.</p>
+            <span class="text-meta">Influências: Faulkner, Rulfo, Borges</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="hero-section">
+          <h2 class="text-h1">Contato</h2>
+          <p class="text-sub">Perguntas, sugestões e pautas. Escreva para a redação.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:var(--pad-section);gap:var(--gap-lg)">
+          <form id="contact-form" style="display:flex;flex-direction:column;gap:var(--gap-md)">
+            <input class="pad-input" type="text" placeholder="Seu nome" required />
+            <input class="pad-input" type="email" placeholder="Seu email" required />
+            <textarea class="pad-input" placeholder="Sua mensagem" rows="4" required></textarea>
+            <button class="cta-button" type="submit">Enviar</button>
+          </form>
+          <div class="metric-counter">
+            <span class="value green" data-target="34">0</span>
+            <span class="label">newsletters enviadas</span>
+          </div>
+          <p class="text-mono">redacao@livrario.com.br</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4 class="text-meta">Curadoria</h4>
+        <p class="text-tiny">Resenhas, Ensaios, Traduções</p>
+      </div>
+      <div>
+        <h4 class="text-meta">Navegação</h4>
+        <p class="text-tiny">Home, Resenhas, Autores</p>
+      </div>
+      <div>
+        <h4 class="text-meta">Institucional</h4>
+        <p class="text-tiny">Sobre, Contato, FAQ</p>
+      </div>
+      <div>
+        <h4 class="text-meta">Newsletter</h4>
+        <p class="text-tiny">A Carta Literária</p>
+      </div>
+      <div>
+        <h4 class="text-meta">&copy; Livrário</h4>
+        <p class="text-tiny">Análises desde 2025</p>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
