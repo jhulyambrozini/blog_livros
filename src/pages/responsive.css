@@ -1,0 +1,444 @@
+/* ═══ Responsive: Tablet & Mobile ────────────────────────────────────── */
+/* Breakpoints: desktop >= 1024px | tablet 640-1023px | mobile < 640px  */
+
+/* ─── TABLET ─────────────────────────────────────────────────────────── */
+@media (max-width: 1023px) {
+  /* Page sections: reduce side padding */
+  .page-section,
+  .page-section--compact,
+  .page-section--flush-bottom {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .autores-hero,
+  .listas-hero,
+  .resenhas-hero {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .home-book {
+    padding: 48px 32px;
+  }
+
+  .resenhas-layout,
+  .listas-cards {
+    padding-right: 32px !important;
+    padding-left: 32px !important;
+  }
+
+  .autores-gallery {
+    padding: 48px 32px !important;
+  }
+
+  .site-footer__bottom {
+    padding: 16px 32px;
+  }
+
+  /* Typography: scale down hero titles */
+  .page-heading--hero,
+  .resenhas-hero__title,
+  .autores-hero__title,
+  .listas-hero__title {
+    font-size: 44px;
+  }
+
+  .page-heading--large {
+    font-size: 32px;
+  }
+
+  .home-book__book-title {
+    font-size: 28px;
+  }
+
+  .resenhas-featured__title {
+    font-size: 28px;
+  }
+
+  /* Home: book section stacks */
+  .home-book {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-book__details {
+    width: 100%;
+    flex-shrink: 1;
+  }
+
+  .book-card {
+    width: 100%;
+  }
+
+  .book-card__visual {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Resenhas: featured stacks + image fluid */
+  .resenhas-featured__inner {
+    flex-direction: column;
+  }
+
+  .resenhas-featured__image {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  /* Resenhas: main + sidebar stack */
+  .resenhas-layout {
+    flex-direction: column;
+  }
+
+  .resenhas-sidebar {
+    width: 100%;
+  }
+
+  /* Autor: detail + aside stack */
+  .autores-detail {
+    flex-direction: column;
+  }
+
+  .autores-detail__aside {
+    width: 100%;
+  }
+
+  /* Autor: gallery 2 columns */
+  .autores-gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Listas: hero preview stacks */
+  .listas-hero__preview {
+    flex-direction: column;
+  }
+
+  .listas-hero__preview-image {
+    min-height: 180px;
+  }
+
+  /* Listas: card stacks */
+  .lista-card {
+    flex-direction: column;
+  }
+
+  .lista-card__image {
+    width: 100%;
+    min-height: 220px;
+  }
+
+  /* Footer: 2 columns */
+  .site-footer__main {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .site-footer__brand-column {
+    width: 100%;
+  }
+
+  .footer-column {
+    width: calc(50% - 12px);
+  }
+
+  .site-footer__newsletter-wrap {
+    width: 100%;
+  }
+}
+
+/* ─── MOBILE ─────────────────────────────────────────────────────────── */
+@media (max-width: 639px) {
+  /* Page sections: minimal padding */
+  .page-section,
+  .page-section--compact,
+  .page-section--flush-bottom {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .autores-hero,
+  .listas-hero,
+  .resenhas-hero {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .home-book {
+    padding: 32px 16px;
+  }
+
+  .resenhas-layout,
+  .listas-cards {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+
+  .autores-gallery {
+    padding: 32px 16px !important;
+  }
+
+  .site-footer__bottom {
+    padding: 16px 16px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  /* Typography: compact */
+  .page-heading--hero,
+  .resenhas-hero__title,
+  .autores-hero__title,
+  .listas-hero__title {
+    font-size: 32px;
+  }
+
+  .page-heading--large {
+    font-size: 26px;
+  }
+
+  .page-heading--medium {
+    font-size: 22px;
+  }
+
+  .home-book__book-title {
+    font-size: 24px;
+  }
+
+  .resenhas-featured__title {
+    font-size: 22px;
+  }
+
+  .page-desc--hero {
+    font-size: 14px;
+  }
+
+  /* Home: hero stacks */
+  .home-hero {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .home-stats {
+    width: 100%;
+  }
+
+  .home-stats__row {
+    gap: 8px;
+  }
+
+  .metric-card.home-stats__card {
+    width: 100%;
+    flex: 1;
+  }
+
+  .home-hero__cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-hero__cta-row .cta-button {
+    width: 100%;
+  }
+
+  /* Home: pillar cards stack */
+  .page-row--gap-sm {
+    flex-direction: column !important;
+  }
+
+  .pillar-card__image img {
+    height: 160px;
+  }
+
+  /* Home: book of the month */
+  .book-card__visual {
+    max-width: 100%;
+    min-height: 240px;
+  }
+
+  .home-book__dates {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .home-book__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-book__actions .cta-button,
+  .home-book__actions .inline-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .book-card__stats {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* Home: newsletter */
+  .home-newsletter__features {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  /* Resenhas: featured */
+  .resenhas-featured__image {
+    min-height: 220px;
+  }
+
+  .resenhas-featured__meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .resenhas-featured__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resenhas-featured__actions .cta-button {
+    width: 100%;
+  }
+
+  /* Resenhas: review cards single column */
+  .resenhas-grid {
+    flex-direction: column;
+  }
+
+  .review-card {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .review-card__image img {
+    height: 160px;
+  }
+
+  .resenhas-hero__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .resenhas-cards__header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .resenhas-cards__title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resenhas-pagination {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .resenhas-pagination__buttons {
+    justify-content: center;
+  }
+
+  /* Autores: gallery single column */
+  .autores-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .autores-hero__card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .autores-guide__methods {
+    flex-direction: column;
+  }
+
+  .method-card {
+    min-width: 0;
+  }
+
+  .autores-tips {
+    flex-direction: column;
+  }
+
+  .tip-card {
+    min-width: 0;
+  }
+
+  .author-card__image img {
+    height: 160px;
+  }
+
+  .autores-timeline__eras {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Listas */
+  .listas-hero__preview-image {
+    min-height: 140px;
+  }
+
+  .lista-card__image {
+    min-height: 180px;
+  }
+
+  .lista-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Footer: single column */
+  .site-footer__main {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .site-footer__newsletter-wrap .newsletter-form {
+    width: 100%;
+  }
+
+  .site-footer__brand-desc {
+    font-size: 12px;
+  }
+
+  /* Contato: contact form */
+  .contato-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-card[style*="width: 520px"] {
+    width: 100% !important;
+  }
+}
+
+/* ─── SMALL MOBILE ───────────────────────────────────────────────────── */
+@media (max-width: 400px) {
+  .page-heading--hero,
+  .resenhas-hero__title,
+  .autores-hero__title,
+  .listas-hero__title {
+    font-size: 26px;
+  }
+
+  .home-stats__row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .metric-card.home-stats__card {
+    width: 100%;
+  }
+}
