@@ -7,10 +7,101 @@
   padding: 0 var(--pad-section);
   height: 64px;
   background: var(--bg-dark);
+  position: relative;
+  z-index: 200;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
   gap: var(--gap-xl);
+}
+
+/* ── Hamburguer button ── */
+.header__hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 210;
+}
+
+.header__hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+  transform-origin: center;
+}
+
+.header--menu-open .header__hamburger span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header--menu-open .header__hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header--menu-open .header__hamburger span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile menu overlay ── */
+.header__mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 150;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.header--menu-open .header__mobile-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Mobile menu (must be after responsive.css in cascade) ── */
+@media (max-width: 639px) {
+  .header__nav {
+    position: fixed;
+    inset: 64px 0 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background: var(--bg-dark);
+    padding: 24px 16px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 160;
+    overflow-y: auto;
+  }
+
+  .header--menu-open .header__nav {
+    transform: translateX(0);
+  }
+
+  .header__hamburger {
+    display: flex;
+  }
+
+  .header__mobile-overlay {
+    display: block;
+  }
+
+  .header .cta-button {
+    display: none;
+  }
 }

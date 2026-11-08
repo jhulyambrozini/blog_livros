@@ -1,3 +1,51 @@
+/* ── Mobile hamburger menu ── */
+function initMobileMenu() {
+  const header = document.querySelector<HTMLElement>('.header')
+  if (!header) return
+
+  const nav = header.querySelector<HTMLElement>('.header__nav')
+  if (!nav) return
+
+  const hamburger = document.createElement('button')
+  hamburger.className = 'header__hamburger'
+  hamburger.setAttribute('aria-label', 'Abrir menu')
+  hamburger.innerHTML = '<span></span><span></span><span></span>'
+
+  const overlay = document.createElement('div')
+  overlay.className = 'header__mobile-overlay'
+
+  header.appendChild(hamburger)
+  header.appendChild(overlay)
+
+  function openMenu() {
+    header.classList.add('header--menu-open')
+    hamburger.setAttribute('aria-label', 'Fechar menu')
+    document.body.style.overflow = 'hidden'
+  }
+
+  function closeMenu() {
+    header.classList.remove('header--menu-open')
+    hamburger.setAttribute('aria-label', 'Abrir menu')
+    document.body.style.overflow = ''
+  }
+
+  hamburger.addEventListener('click', () => {
+    if (header.classList.contains('header--menu-open')) {
+      closeMenu()
+    } else {
+      openMenu()
+    }
+  })
+
+  overlay.addEventListener('click', closeMenu)
+
+  nav.querySelectorAll<HTMLAnchorElement>('a').forEach(link => {
+    link.addEventListener('click', closeMenu)
+  })
+}
+
+initMobileMenu()
+
 /* ── Smooth scroll for in-page anchors ── */
 document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
