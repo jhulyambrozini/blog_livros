@@ -18,12 +18,14 @@ function initMobileMenu() {
   header.appendChild(overlay)
 
   function openMenu() {
+    if (!header) return
     header.classList.add('header--menu-open')
     hamburger.setAttribute('aria-label', 'Fechar menu')
     document.body.style.overflow = 'hidden'
   }
 
   function closeMenu() {
+    if (!header) return
     header.classList.remove('header--menu-open')
     hamburger.setAttribute('aria-label', 'Abrir menu')
     document.body.style.overflow = ''
